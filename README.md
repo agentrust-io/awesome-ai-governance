@@ -31,7 +31,7 @@ Only tools with working integrations are listed. If it's here, it works with our
 - [LangChain](https://github.com/langchain-ai/langchain) - Governed via `LangChainKernel().wrap(my_chain)` in Agent OS. AgentMesh LangChain integration for secure agents with policies. Agent SRE LangChain callback handler for SLI collection.
 - [CrewAI](https://github.com/joaomdmoura/crewAI) - Governed via `CrewAIKernel().wrap(my_crew)` in Agent OS. AgentMesh CrewAI integration for multi-agent crew governance. Agent SRE CrewAI adapter for reliability monitoring.
 - [AutoGen](https://github.com/microsoft/autogen) - Governed via `AutoGenKernel().wrap(autogen_agent)` in Agent OS. Agent SRE AutoGen adapter for SLO tracking.
-- [LangGraph](https://github.com/langchain-ai/langgraph) - AgentMesh LangGraph integration with trust checkpoints for graph workflows. Agent SRE LangGraph adapter for reliability monitoring.
+- [LangGraph](https://github.com/langchain-ai/langgraph) - AgentMesh LangGraph integration with trust checkpoints for graph workflows. Published as [`langgraph-trust`](https://pypi.org/project/langgraph-trust/) on PyPI with TrustGate nodes, PolicyCheckpoint, and trust-aware routing. Agent SRE LangGraph adapter for reliability monitoring.
 - [OpenAI Agents SDK](https://platform.openai.com/docs/agents) - Governed via `OpenAIAgentsSDKKernel().wrap(agent)` in Agent OS. Agent SRE OpenAI Agents SDK adapter for SLI collection.
 - [OpenAI Assistants](https://platform.openai.com/docs/assistants) - Governed via `OpenAIKernel().wrap_assistant(assistant, client)` in Agent OS.
 - [Semantic Kernel](https://github.com/microsoft/semantic-kernel) - Governed via `SemanticKernelWrapper().wrap(sk_kernel)` in Agent OS. Agent SRE Semantic Kernel adapter for kernel/plugin/function tracking.
@@ -120,6 +120,7 @@ Only tools with working integrations are listed. If it's here, it works with our
 - [awesome-llm-apps](https://github.com/Shubhamsaboo/awesome-llm-apps) - Agent OS and AgentMesh featured in the awesome-llm-apps curated list.
 - [awesome-mcp-servers](https://github.com/punkpeye/awesome-mcp-servers) - Agent OS MCP server listed in awesome-mcp-servers.
 - [Microsoft agent-lightning](https://github.com/microsoft/agent-lightning/tree/main/contrib/recipes/agentos) - Agent OS recipe integrated in Microsoft's agent-lightning project.
+- [langgraph-trust](https://pypi.org/project/langgraph-trust/) - Trust-gated checkpoint nodes for LangGraph, published on PyPI. 57 tests, Ed25519 identity, governance policies.
 
 ## Contributing
 
