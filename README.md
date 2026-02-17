@@ -38,6 +38,7 @@ Only tools with working integrations are listed. If it's here, it works with our
 - [OpenAI Swarm](https://github.com/openai/swarm) - AgentMesh Swarm integration with trust-verified handoffs between agents.
 - [Dify](https://github.com/langgenius/dify) - AgentMesh trust middleware for Dify workflows via [agentmesh-integrations](https://github.com/imran-siddique/agentmesh-integrations/tree/master/dify). Agent SRE Dify adapter for workflow/node/HTTP request tracking.
 - [LlamaIndex](https://github.com/run-llama/llama_index) - Agent OS and AgentMesh integrated via [LlamaIndex PR #20644](https://github.com/run-llama/llama_index/pull/20644). Agent SRE LlamaIndex callback handler for query/retriever/LLM tracking.
+- [OpenClaw](https://openclaw.im/) - AgentMesh governance skill published on [ClawHub](https://clawhub.ai/imran-siddique/agentmesh-governance). Policy enforcement, trust scoring, Ed25519 DIDs, and Merkle audit logs for OpenClaw agents.
 
 ## IDE & AI Assistant Extensions
 
