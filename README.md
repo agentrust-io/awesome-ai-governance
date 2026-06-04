@@ -35,6 +35,7 @@ AI agents are moving from demos to production, but governance hasn't kept up. Th
 - [Agent SRE](https://github.com/imran-siddique/agent-sre) - Reliability engineering for AI agents with SLOs, error budgets, chaos testing, progressive delivery, cost guardrails, and incident management.
 - [Agent Hypervisor](https://github.com/imran-siddique/agent-hypervisor) - Hypervisor-grade isolation and resource management for untrusted AI agents.
 - [IBM mcp-context-forge](https://github.com/IBM/mcp-context-forge) - MCP gateway with context-aware guardrails, request routing, and compliance controls for enterprise MCP deployments.
+- [Regulus](https://github.com/neul-labs/regulus) - EU & UK compliance plane for Google ADK encoding 10 regulations (EU AI Act, GDPR, DORA, NIS2, EHDS, UK GDPR, FCA SYSC, PRA SS1/23, PRA SS2/21, NHS DSPT) and 6 governance frameworks as runtime ADK `BasePlugin` profiles; emits hash-chained audit envelopes with GRC adapters (ServiceNow IRM, OneTrust, MetricStream).
 - [Cordum](https://github.com/cordum-io/cordum) - Agent control plane providing governance, lifecycle management, and policy enforcement for autonomous agents.
 - [Gate22](https://github.com/aipotheosis-labs/gate22) - MCP gateway with role-based access control, audit logging, and fine-grained permission management for tool access.
 - [TrinityGuard](https://github.com/AI45Lab/TrinityGuard) - Multi-agent safety framework with three-layer defense for detecting and preventing unsafe agent behaviors.
