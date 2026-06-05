@@ -100,6 +100,7 @@ AI agents are moving from demos to production, but governance hasn't kept up. Th
 - [Braintrust](https://www.braintrust.dev/) - Evaluation and monitoring platform for AI products with logging, scoring, and experiment comparison.
 - [Helicone](https://github.com/Helicone/helicone) - Open-source LLM observability platform with request logging, cost tracking, caching, and rate limiting.
 - [AgentOps](https://github.com/AgentOps-AI/agentops) - Agent observability SDK with session replay, LLM cost tracking, compliance monitoring, and failure detection.
+- [Tuning Engines](https://github.com/cerebrixos-org/tuningengines) - Open-source AI control and evidence plane for agent, tool, model, MCP, and skill traffic. Records policy decisions, approvals, traces, runtime state references, costs, and outcomes for governed agent operations.
 - [Weights & Biases](https://wandb.ai/) - ML experiment tracking platform with LLM tracing, evaluation pipelines, and model monitoring.
 - [MLflow](https://github.com/mlflow/mlflow) - Open-source platform for the ML lifecycle with experiment tracking, model registry, and LLM evaluation tools.
 - [Datadog LLM Observability](https://www.datadoghq.com/product/llm-observability/) - Enterprise monitoring for LLM applications with trace clustering, cost attribution, and quality scoring.
