@@ -1,12 +1,13 @@
 # Awesome AI Agent Governance [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-> A curated list of tools, frameworks, standards, and resources for governing autonomous AI agents — covering safety, trust, identity, observability, and compliance across the agent lifecycle.
+> A curated list of tools, frameworks, standards, and resources for governing autonomous AI agents, covering safety, trust, identity, observability, and compliance across the agent lifecycle.
 
-AI agents now hold real reach: email, CRMs, databases, financial systems. Guardrails at the content layer probably hold — but enterprises need to run on proof, not probability. This list tracks the tools and practices for making agents safe, auditable, and trustworthy in production.
+AI agents now hold real reach: email, CRMs, databases, financial systems. Guardrails at the content layer probably hold, but enterprises need to run on proof, not probability. This list tracks the tools and practices for making agents safe, auditable, and trustworthy in production.
 
 ## Contents
 
 - [Governance Frameworks](#governance-frameworks)
+- [End-to-End Governance: Software and Hardware](#end-to-end-governance-software-and-hardware)
 - [Policy as Code](#policy-as-code)
 - [LLM Safety & Guardrails](#llm-safety--guardrails)
 - [Agent Frameworks with Governance Features](#agent-frameworks-with-governance-features)
@@ -22,14 +23,12 @@ AI agents now hold real reach: email, CRMs, databases, financial systems. Guardr
 
 *Dedicated platforms and control planes for governing AI agent behavior, enforcing policies, and maintaining trust at runtime.*
 
-- [Agent Governance Toolkit (AGT)](https://github.com/microsoft/agent-governance-toolkit) - Production governance layer for autonomous agents with a policy enforcement kernel (<0.1ms p99), execution rings (Ring 0-3), cryptographic Merkle audit logs, and integrations across LangChain, CrewAI, AutoGen, Google ADK, and more. Python + .NET + Rust. Now stewarded by the Agentic AI Foundation. ★4000+
+- [Agent Governance Toolkit (AGT)](https://github.com/microsoft/agent-governance-toolkit) - Production governance layer for autonomous agents with a policy enforcement kernel (<0.1ms p99), execution rings (Ring 0-3), cryptographic Merkle audit logs, and integrations across LangChain, CrewAI, AutoGen, Google ADK, and more. Python + .NET + Rust. Now stewarded by the Agentic AI Foundation. Provides the software governance layer that integrates with hardware-attested enforcement via cMCP. ★4000+
 - [Agent Hypervisor](https://github.com/imran-siddique/agent-hypervisor) - Runtime supervisor for AI agents with execution rings, saga compensation, joint liability, and kill-switch controls.
-- [Agent Manifest](https://github.com/agentrust-io/agent-manifest) - Hardware-anchored SDK that binds all 10 deployment artifacts (model, tools, policy, identity, etc.) into a single cryptographically signed manifest. Python + TypeScript.
 - [Agent OS](https://github.com/imran-siddique/agent-os) - Kernel-level governance with POSIX-inspired primitives, policy interception, and OWASP Agentic Top 10 coverage. Integrates with LangChain, CrewAI, AutoGen, PydanticAI, and smolagents.
 - [Agent SRE](https://github.com/imran-siddique/agent-sre) - Site reliability engineering for AI agents: SLOs, error budgets, chaos testing, circuit breakers, and cascading failure detection.
 - [AgentGate](https://github.com/ElamOlame31/agentgate-public) - Open-source pre-execution authorization PDP for autonomous AI agents. Scores trust across 4 dimensions (Identity, Delegation, Purpose Alignment, Behavioral), detects 24h kill chain patterns, and generates Merkle-chained audit trails before each action executes. MIT licensed, drop-in with LangGraph and LangChain.
 - [AgentMesh](https://github.com/imran-siddique/agent-mesh) - Zero-trust networking for AI agents with DID identity, behavioral trust scoring, delegation chains, and MCP governance proxy.
-- [cMCP](https://github.com/agentrust-io/cmcp) - Confidential MCP Gateway. Hardware-attested policy enforcement for MCP tool calls — every tool invocation verified in silicon before execution.
 - [Coral Server](https://github.com/Coral-Protocol/coral-server) - Agent coordination and trust server enabling safe multi-agent collaboration with structured communication protocols.
 - [Cordum](https://github.com/cordum-io/cordum) - Agent control plane providing governance, lifecycle management, and policy enforcement for autonomous agents.
 - [Gate22](https://github.com/aipotheosis-labs/gate22) - MCP gateway with role-based access control, audit logging, and fine-grained permission management for tool access.
@@ -38,12 +37,22 @@ AI agents now hold real reach: email, CRMs, databases, financial systems. Guardr
 - [LiteLLM](https://github.com/BerriAI/litellm) - Unified LLM gateway with spend tracking, rate limiting, guardrails, and access controls across 100+ LLM providers.
 - [Regulus](https://github.com/neul-labs/regulus) - EU & UK compliance plane for Google ADK encoding 10 regulations (EU AI Act, GDPR, DORA, NIS2, EHDS, UK GDPR, FCA SYSC, PRA SS1/23, PRA SS2/21, NHS DSPT) and 6 governance frameworks as runtime ADK `BasePlugin` profiles; emits hash-chained audit envelopes with GRC adapters (ServiceNow IRM, OneTrust, MetricStream).
 - [ScopeBlind protect-mcp](https://github.com/ScopeBlind/scopeblind-gateway) - Security gateway for MCP servers with Cedar policy enforcement (AWS Cedar via WASM), Ed25519-signed decision receipts, issuer-blind spending authority (VOPRF), and multi-agent swarm tracking. [Merged into AGT](https://github.com/microsoft/agent-governance-toolkit/pull/667).
-- [TRACE](https://github.com/agentrust-io/trace-spec) - Open attestation standard for agentic AI governance. Each agent action produces a verifiable compliance claim anchored in an append-only Merkle registry.
 - [TrinityGuard](https://github.com/AI45Lab/TrinityGuard) - Multi-agent safety framework with three-layer defense for detecting and preventing unsafe agent behaviors.
+
+## End-to-End Governance: Software and Hardware
+
+*Tools and platforms that combine software policy enforcement with hardware-attested execution. The software layer (Cedar policy, audit logs, agent identity) is measured into a Trusted Execution Environment so that the governance claims cannot be forged by a privileged operator, a compromised runtime, or a supply chain attack. The result is a compliance artifact that any third party can verify offline without trusting the operator.*
+
+*The stack: AGT enforces Cedar policies at the software layer. cMCP carries those policies into the TEE. TRACE records the attested outcome. Agent Manifest binds all ten deployment artifacts into a hardware-sealed identity document. Opaque Systems provides the managed TEE runtime.*
+
+- [Agent Manifest](https://github.com/agentrust-io/agent-manifest) - Signs all 10 agent deployment artifacts (system prompt, policy bundle, model identity, tool schemas, RAG corpus, memory baseline, decision trace, A2A delegation chain, build provenance, HITL approvals) into a single tamper-evident record. Hardware attestation via TPM, AMD SEV-SNP, Intel TDX, or Opaque Managed Runtime. Four conformance levels mapped to EU AI Act Art. 13-15, DORA, HIPAA, and FedRAMP. 197 conformance tests. Python + TypeScript. Developer preview, launching June 23 2026.
+- [cMCP (Confidential MCP Gateway)](https://github.com/agentrust-io/cmcp) - MCP gateway running inside a TEE. The Cedar policy bundle is measured into hardware attestation before any code runs; the signing key never leaves the enclave. Every tool call produces a signed GatewayClaim bound to the hardware measurement. Supports TPM, AMD SEV-SNP, Intel TDX, NVIDIA H100 Confidential Compute, and Opaque Managed Runtime. Developer preview, launching June 23 2026.
+- [Opaque Systems](https://opaque.co) - Managed TEE runtime providing the highest-assurance hardware backend for cMCP, TRACE, and Agent Manifest. Handles TEE provisioning, attestation key lifecycle, and enclave deployment. Produces TRACE records signed by Opaque's hardware root of trust. Commercial.
+- [TRACE (Trust Runtime Attestation and Compliance Evidence)](https://github.com/agentrust-io/trace-spec) - Open attestation standard and Python SDK for agentic AI governance. Each agent run produces a signed EAT/JWT trust record binding model identity, policy version, TEE hardware evidence, and tool call transcript into a single artifact verifiable offline without calling the operator. Built on IETF RATS (RFC 9334), EAT (RFC 9711), SCITT, SLSA, and SPIFFE. Spec v0.1, launching June 23 2026.
 
 ## Policy as Code
 
-*Language-level tools for expressing, validating, and enforcing authorization policies — applicable to agent capability bounds, tool access, and data permissions.*
+*Language-level tools for expressing, validating, and enforcing authorization policies applicable to agent capability bounds, tool access, and data permissions.*
 
 - [Casbin](https://github.com/casbin/casbin) - Cross-language authorization library supporting ACL, RBAC, and ABAC models. Available in Go, Python, Java, and more.
 - [Cedar](https://github.com/cedar-policy/cedar) - Amazon's policy language for fine-grained, type-safe access control. Used as the policy engine in the Agent Governance Toolkit. Fast, formally verified, and human-readable.
@@ -85,12 +94,10 @@ AI agents now hold real reach: email, CRMs, databases, financial systems. Guardr
 
 ## Agent Identity & Attestation
 
-*Protocols and tools for establishing cryptographic identity, trust, and verifiable provenance for AI agents.*
+*Protocols and tools for establishing cryptographic identity, trust, and verifiable provenance for AI agents. For hardware-attested agent identity and compliance records, see [End-to-End Governance: Software and Hardware](#end-to-end-governance-software-and-hardware).*
 
 - [Agent Card / AI Card](https://google.github.io/A2A/#/documentation?id=agent-card) - Specification for machine-readable agent capability and policy metadata, enabling discovery and trust decisions.
-- [Agent Manifest](https://github.com/agentrust-io/agent-manifest) - Cryptographically signs all 10 deployment artifacts (model, tools, policy, identity, memory config, etc.) into a tamper-evident deployment record.
 - [SPIFFE/SVID](https://spiffe.io/) - Secure Production Identity Framework for Everyone. Cryptographic workload identity applicable to agent-to-agent authentication.
-- [TRACE](https://github.com/agentrust-io/trace-spec) - Trust Runtime Attestation and Compliance Evidence. Each governed action produces a cryptographic claim anchored in an append-only Merkle log.
 - [TWZRD Agent Intel](https://intel.twzrd.xyz) - On-chain trust scoring and reputation verification for AI agent wallets on Solana. Queries verifiable on-chain wallet history to authorize agent-to-agent actions before execution; issues signed, x402-gated trust receipts for immutable audit trails.
 - [W3C Decentralized Identifiers (DIDs)](https://www.w3.org/TR/did-core/) - W3C standard for decentralized, self-sovereign identifiers applicable to durable agent identity without centralized registries.
 
@@ -157,7 +164,8 @@ AI agents now hold real reach: email, CRMs, databases, financial systems. Guardr
 
 *Practitioner guides, threat models, and industry analyses for agent governance.*
 
-- [Anthropic's Responsible Scaling Policy](https://www.anthropic.com/index/anthropics-responsible-scaling-policy) - Framework for responsible AI deployment with AI Safety Levels (ASL) and safety evaluation commitments.
+- [Anthropic's Responsible Scaling Policy](https://www.anthropic.com/responsible-scaling-policy) - Framework for responsible AI deployment with AI Safety Levels (ASL) and safety evaluation commitments.
+- [Anthropic's Zero Trust for AI Agents](https://www.anthropic.com/research/zero-trust-for-ai-agents) - Practical framework applying zero-trust principles to agentic AI: agent identity, supply chain security, MCP tool security, policy enforcement, multi-agent coordination, and detection and response.
 - [CSA AI Safety Initiative](https://cloudsecurityalliance.org/research/working-groups/artificial-intelligence) - Cloud Security Alliance publications on AI safety and security best practices.
 - [Google Secure AI Framework (SAIF)](https://safety.google/cybersecurity-advancements/saif/) - Conceptual framework for securing AI systems across the development and deployment lifecycle.
 - [Microsoft Responsible AI Standard](https://www.microsoft.com/en-us/ai/responsible-ai) - Framework covering fairness, reliability, safety, and transparency in AI development.
@@ -173,6 +181,7 @@ AI agents now hold real reach: email, CRMs, databases, financial systems. Guardr
 - [ACM FAccT](https://facctconference.org/) - ACM Conference on Fairness, Accountability, and Transparency in sociotechnical systems.
 - [AI Safety Camp](https://aisafety.camp/) - Research program for AI safety and alignment.
 - [Alignment Forum](https://www.alignmentforum.org/) - Community forum for AI alignment and safety research.
+- [Confidential Computing Summit](https://confidentialcomputingsummit.com/) - Annual conference on confidential computing, TEE hardware, and hardware-attested workloads. Primary venue for TRACE, cMCP, and Agent Manifest launch (June 2026, San Francisco).
 - [ICML](https://icml.cc/) - International Conference on Machine Learning, with safe and reliable ML tracks.
 - [NeurIPS](https://neurips.cc/) - Leading ML conference with AI safety, alignment, and trustworthy ML workshops.
 - [OWASP GenAI](https://genai.owasp.org/) - OWASP community for security guidance on generative AI and agentic applications.
@@ -184,4 +193,4 @@ Contributions welcome! Please read the [contribution guidelines](CONTRIBUTING.md
 
 ---
 
-*Maintained by [Imran Siddique](https://github.com/imran-siddique) — CPO at [Opaque Systems](https://opaque.co), creator of the [Agent Governance Toolkit](https://github.com/microsoft/agent-governance-toolkit), and contributor to OWASP ASI, CoSAI WS4, and the Agentic AI Foundation. The curator also maintains AGT, the agentrust-io tools (TRACE, cMCP, Agent Manifest), and the four component repos (Agent OS, AgentMesh, Agent SRE, Agent Hypervisor).*
+*Maintained by [Imran Siddique](https://github.com/imran-siddique), CPO at [Opaque Systems](https://opaque.co), creator of the [Agent Governance Toolkit](https://github.com/microsoft/agent-governance-toolkit), and contributor to OWASP ASI, CoSAI WS4, and the Agentic AI Foundation. The curator also maintains AGT, the agentrust-io tools (TRACE, cMCP, Agent Manifest), and the four component repos (Agent OS, AgentMesh, Agent SRE, Agent Hypervisor).*
