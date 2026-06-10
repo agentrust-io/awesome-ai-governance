@@ -27,6 +27,7 @@ AI agents now hold real reach: email, CRMs, databases, financial systems. Guardr
 - [Agent Manifest](https://github.com/agentrust-io/agent-manifest) - Hardware-anchored SDK that binds all 10 deployment artifacts (model, tools, policy, identity, etc.) into a single cryptographically signed manifest. Python + TypeScript.
 - [Agent OS](https://github.com/imran-siddique/agent-os) - Kernel-level governance with POSIX-inspired primitives, policy interception, and OWASP Agentic Top 10 coverage. Integrates with LangChain, CrewAI, AutoGen, PydanticAI, and smolagents.
 - [Agent SRE](https://github.com/imran-siddique/agent-sre) - Site reliability engineering for AI agents: SLOs, error budgets, chaos testing, circuit breakers, and cascading failure detection.
+- [AgentGate](https://github.com/ElamOlame31/agentgate-public) - Open-source pre-execution authorization PDP for autonomous AI agents. Scores trust across 4 dimensions (Identity, Delegation, Purpose Alignment, Behavioral), detects 24h kill chain patterns, and generates Merkle-chained audit trails before each action executes. MIT licensed, drop-in with LangGraph and LangChain.
 - [AgentMesh](https://github.com/imran-siddique/agent-mesh) - Zero-trust networking for AI agents with DID identity, behavioral trust scoring, delegation chains, and MCP governance proxy.
 - [cMCP](https://github.com/agentrust-io/cmcp) - Confidential MCP Gateway. Hardware-attested policy enforcement for MCP tool calls — every tool invocation verified in silicon before execution.
 - [Coral Server](https://github.com/Coral-Protocol/coral-server) - Agent coordination and trust server enabling safe multi-agent collaboration with structured communication protocols.
@@ -35,6 +36,8 @@ AI agents now hold real reach: email, CRMs, databases, financial systems. Guardr
 - [IBM mcp-context-forge](https://github.com/IBM/mcp-context-forge) - Enterprise MCP gateway with context-aware guardrails, request routing, and compliance controls.
 - [Invariant Guardrails](https://github.com/invariantlabs-ai/invariant) - Rule-based guardrails engine with policy-as-code, trace analysis, and real-time intervention for agentic applications.
 - [LiteLLM](https://github.com/BerriAI/litellm) - Unified LLM gateway with spend tracking, rate limiting, guardrails, and access controls across 100+ LLM providers.
+- [Regulus](https://github.com/neul-labs/regulus) - EU & UK compliance plane for Google ADK encoding 10 regulations (EU AI Act, GDPR, DORA, NIS2, EHDS, UK GDPR, FCA SYSC, PRA SS1/23, PRA SS2/21, NHS DSPT) and 6 governance frameworks as runtime ADK `BasePlugin` profiles; emits hash-chained audit envelopes with GRC adapters (ServiceNow IRM, OneTrust, MetricStream).
+- [ScopeBlind protect-mcp](https://github.com/ScopeBlind/scopeblind-gateway) - Security gateway for MCP servers with Cedar policy enforcement (AWS Cedar via WASM), Ed25519-signed decision receipts, issuer-blind spending authority (VOPRF), and multi-agent swarm tracking. [Merged into AGT](https://github.com/microsoft/agent-governance-toolkit/pull/667).
 - [TRACE](https://github.com/agentrust-io/trace-spec) - Open attestation standard for agentic AI governance. Each agent action produces a verifiable compliance claim anchored in an append-only Merkle registry.
 - [TrinityGuard](https://github.com/AI45Lab/TrinityGuard) - Multi-agent safety framework with three-layer defense for detecting and preventing unsafe agent behaviors.
 
@@ -42,8 +45,8 @@ AI agents now hold real reach: email, CRMs, databases, financial systems. Guardr
 
 *Language-level tools for expressing, validating, and enforcing authorization policies — applicable to agent capability bounds, tool access, and data permissions.*
 
-- [Cedar](https://github.com/cedar-policy/cedar) - Amazon's policy language for fine-grained, type-safe access control. Used as the policy engine in the Agent Governance Toolkit. Fast, formally verified, and human-readable.
 - [Casbin](https://github.com/casbin/casbin) - Cross-language authorization library supporting ACL, RBAC, and ABAC models. Available in Go, Python, Java, and more.
+- [Cedar](https://github.com/cedar-policy/cedar) - Amazon's policy language for fine-grained, type-safe access control. Used as the policy engine in the Agent Governance Toolkit. Fast, formally verified, and human-readable.
 - [Open Policy Agent (OPA)](https://github.com/open-policy-agent/opa) - CNCF general-purpose policy engine. Decouples policy decisions from application logic using the Rego language. Widely deployed for Kubernetes and API authorization.
 - [SpiceDB](https://github.com/authzed/spicedb) - Google Zanzibar-inspired database for fine-grained, relationship-based authorization. Useful for cross-agent and multi-tenant permission modeling.
 
@@ -51,6 +54,7 @@ AI agents now hold real reach: email, CRMs, databases, financial systems. Guardr
 
 *Input/output filtering, content safety, and prompt protection for LLM-powered agents.*
 
+- [ai-evaluation](https://github.com/future-agi/ai-evaluation) - Open-source LLM evaluation framework with 50+ metrics, LLM-as-Judge, and guardrail scanners (jailbreak, PII, injection).
 - [Arthur Shield](https://www.arthur.ai/product/shield) - Firewall for LLMs that detects hallucinations, toxicity, PII leakage, and prompt injection in real time.
 - [Guardrails AI](https://github.com/guardrails-ai/guardrails) - Framework for structural, type, and quality guarantees on LLM outputs. Guardrails Hub provides community validators.
 - [Hyperion](https://github.com/Salesforce/hyperion) - Framework for evaluating and improving robustness of LLM-based agents against adversarial attacks.
@@ -87,6 +91,7 @@ AI agents now hold real reach: email, CRMs, databases, financial systems. Guardr
 - [Agent Manifest](https://github.com/agentrust-io/agent-manifest) - Cryptographically signs all 10 deployment artifacts (model, tools, policy, identity, memory config, etc.) into a tamper-evident deployment record.
 - [SPIFFE/SVID](https://spiffe.io/) - Secure Production Identity Framework for Everyone. Cryptographic workload identity applicable to agent-to-agent authentication.
 - [TRACE](https://github.com/agentrust-io/trace-spec) - Trust Runtime Attestation and Compliance Evidence. Each governed action produces a cryptographic claim anchored in an append-only Merkle log.
+- [TWZRD Agent Intel](https://intel.twzrd.xyz) - On-chain trust scoring and reputation verification for AI agent wallets on Solana. Queries verifiable on-chain wallet history to authorize agent-to-agent actions before execution; issues signed, x402-gated trust receipts for immutable audit trails.
 - [W3C Decentralized Identifiers (DIDs)](https://www.w3.org/TR/did-core/) - W3C standard for decentralized, self-sovereign identifiers applicable to durable agent identity without centralized registries.
 
 ## Observability & Monitoring
@@ -97,12 +102,14 @@ AI agents now hold real reach: email, CRMs, databases, financial systems. Guardr
 - [Arize / Phoenix](https://github.com/Arize-ai/phoenix) - Open-source AI observability with LLM tracing, evaluation, retrieval analysis, and experiment tracking.
 - [Braintrust](https://www.braintrust.dev/) - Evaluation and monitoring platform with logging, scoring, and experiment comparison.
 - [Datadog LLM Observability](https://www.datadoghq.com/product/llm-observability/) - Enterprise monitoring with trace clustering, cost attribution, and quality scoring.
+- [Future AGI](https://github.com/future-agi/future-agi) - Open-source self-hostable end-to-end agent engineering platform with tracing, evals, guardrails, and gateway.
 - [Helicone](https://github.com/Helicone/helicone) - Open-source LLM observability with request logging, cost tracking, caching, and rate limiting.
 - [Jaeger](https://www.jaegertracing.io/) - Open-source distributed tracing for monitoring agent workflows and debugging latency across services.
 - [Langfuse](https://github.com/langfuse/langfuse) - Open-source LLM engineering platform with tracing, prompt management, evaluations, and cost tracking.
 - [LangSmith](https://smith.langchain.com/) - LangChain's platform for debugging, testing, evaluating, and monitoring LLM applications.
 - [MLflow](https://github.com/mlflow/mlflow) - Open-source ML lifecycle platform with experiment tracking, model registry, and LLM evaluation tools.
 - [Prometheus](https://prometheus.io/) + [Grafana](https://grafana.com/) - Industry-standard metrics and visualization. Foundation for custom agent SLO dashboards.
+- [traceAI](https://github.com/future-agi/traceAI) - Open-source OpenTelemetry-native tracing for LLM and agent apps with 50+ framework integrations.
 - [Tuning Engines](https://github.com/cerebrixos-org/tuningengines) - Open-source AI control and evidence plane for agent, tool, MCP, and skill traffic. Records policy decisions, approvals, traces, runtime state, costs, and outcomes.
 - [Weights & Biases](https://wandb.ai/) - ML experiment tracking with LLM tracing, evaluation pipelines, and model monitoring.
 
@@ -129,6 +136,7 @@ AI agents now hold real reach: email, CRMs, databases, financial systems. Guardr
 - [OpenTelemetry](https://opentelemetry.io/) - Vendor-neutral observability standard for traces, metrics, and logs. Foundation for agent observability pipelines.
 - [Oracle Agent Spec](https://github.com/oracle/agent-spec) - Enterprise agent interoperability specification with governance and management capabilities.
 - [OWASP Agentic Applications Top 10 (2026)](https://genai.owasp.org/resource/agentic-ai-threats-and-mitigations/) - OWASP classification of the top 10 security risks in agentic AI: excessive agency, trust boundary failures, identity spoofing, and more.
+- [Signed Decision Receipts (IETF)](https://datatracker.ietf.org/doc/draft-farley-acta-signed-receipts/) - Internet-Draft defining a portable, cryptographically signed receipt format for machine-to-machine access control decisions. Ed25519 + JCS canonicalization. Independently verifiable offline.
 
 ## Research Papers
 
