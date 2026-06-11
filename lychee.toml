@@ -7,6 +7,6 @@ accept = ["200..=299", "403", "429"]
 user_agent = "Mozilla/5.0 (compatible; lychee link checker)"
 exclude = [
     # Anchors into SPA docs resolve client-side
-    "^https://google\.github\.io/A2A/#/",
+    '^https://google\.github\.io/A2A/#/',
 ]
 exclude_mail = true
