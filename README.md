@@ -133,17 +133,32 @@ AI agents now hold real reach: email, CRMs, databases, financial systems. Guardr
 
 ## Standards & Specifications
 
-*Protocols, specifications, and regulatory frameworks relevant to agent governance and interoperability.*
+  *Protocols, specifications, and regulatory frameworks relevant to agent governance and interoperability.*
 
-- [Agent-to-Agent Protocol (A2A)](https://github.com/google/A2A) - Google-led open protocol for inter-agent communication, task delegation, and capability discovery.
-- [CSA MCP Security Resource Center](https://cloudsecurityalliance.org/research/working-groups/model-context-protocol-security) - Cloud Security Alliance guidance for secure MCP implementations.
-- [EU AI Act](https://artificialintelligenceact.eu/) - EU regulation classifying AI systems by risk with requirements for transparency, human oversight, and governance.
-- [Model Context Protocol (MCP)](https://modelcontextprotocol.io/) - Open protocol connecting LLMs to tools and data sources with standardized server/client architecture.
-- [NIST AI Risk Management Framework](https://www.nist.gov/artificial-intelligence/executive-order-safe-secure-and-trustworthy-artificial-intelligence) - NIST framework for managing AI risk including governance and accountability.
-- [OpenTelemetry](https://opentelemetry.io/) - Vendor-neutral observability standard for traces, metrics, and logs. Foundation for agent observability pipelines.
-- [Oracle Agent Spec](https://github.com/oracle/agent-spec) - Enterprise agent interoperability specification with governance and management capabilities.
-- [OWASP Agentic Applications Top 10 (2026)](https://genai.owasp.org/resource/agentic-ai-threats-and-mitigations/) - OWASP classification of the top 10 security risks in agentic AI: excessive agency, trust boundary failures, identity spoofing, and more.
-- [Signed Decision Receipts (IETF)](https://datatracker.ietf.org/doc/draft-farley-acta-signed-receipts/) - Internet-Draft defining a portable, cryptographically signed receipt format for machine-to-machine access control decisions. Ed25519 + JCS canonicalization. Independently verifiable offline.
+  - [Agent-to-Agent Protocol (A2A)](https://github.com/google/A2A) - Google-led open protocol for inter-agent communication, task delegation, and capability discovery.
+  - [CoSAI Risk Map v1](https://github.com/cosai-oasis/secure-ai-tooling) - Coalition for Secure AI's component-level risk taxonomy for agentic AI systems: 23 components, 35 controls, 36 risks (including 6 agentic-specific), 10 personas, 8 lifecycle stages. Cross-walks to MITRE ATLAS, NIST AI RMF, STRIDE, OWASP LLM Top 10, ISO 22989, and EU AI Act. Launched June 2026.
+  - [CSA Agentic Trust Framework](https://github.com/massivescale-ai/agentic-trust-framework) - Cloud Security Alliance / MassiveScale framework defining 5 Core Elements (Identity, Behavior, Data Governance, Segmentation, Incident Response) with 25 requirements across a 4-tier maturity model (Intern, Junior, Senior, Principal). Public Review Draft v0.9.1 (April 2026). Two conformance tiers: ATF Compatible / ATF Certified.
+  - [CSA MCP Security Resource Center](https://cloudsecurityalliance.org/research/working-groups/model-context-protocol-security) - Cloud Security Alliance guidance for secure MCP implementations.
+  - [CSA Non-Human Identity & Agentic AI Governance
+  v1](https://labs.cloudsecurityalliance.org/research/csa-whitepaper-nonhuman-identity-agentic-ai-governance-v1-cs/) - Cloud Security Alliance whitepaper recommending a 6-field NHI registry (Identity, Owning Team, Business Purpose, Systems Accessed, Privilege Scope, Expiration/Review Date) for managing non-human and agentic identities. Published May 2026.
+  - [EU AI Act](https://artificialintelligenceact.eu/) - EU regulation classifying AI systems by risk with requirements for transparency, human oversight, and governance.
+  - [Model Context Protocol (MCP)](https://modelcontextprotocol.io/) - Open protocol connecting LLMs to tools and data sources with standardized server/client architecture.
+  - [NIST AI 600-1 (GenAI Profile)](https://www.nist.gov/itl/ai-risk-management-framework) - NIST profile of the AI Risk Management Framework focused on generative AI, enumerating 12 risk categories (CBRN, Confabulation, Dangerous Content, Data Privacy, Environmental Impacts, Harmful Bias, Human-AI Configuration, Information Integrity, Information Security, Intellectual Property, Obscene Content, Value Chain). 200+ suggested actions across Govern/Map/Measure/Manage functions. Published July 2024.
+  - [NIST AI Risk Management
+  Framework](https://www.nist.gov/artificial-intelligence/executive-order-safe-secure-and-trustworthy-artificial-intelligence) - NIST framework for managing AI risk including governance and accountability.
+  - [NIST IR 8596 (Cyber AI Profile)](https://csrc.nist.gov/pubs/ir/8596/iprd) - NIST profile crossing the Cybersecurity Framework 2.0 against AI in three focus areas (Secure AI System Components, Defend with AI, Thwart AI-Enabled Threats) across six CSF functions (Govern, Identify, Protect, Detect, Respond, Recover). Preliminary Draft (December 2025).
+  - [OpenTelemetry](https://opentelemetry.io/) - Vendor-neutral observability standard for traces, metrics, and logs. Foundation for agent
+  observability pipelines.
+  - [Oracle Agent Spec](https://github.com/oracle/agent-spec) - Enterprise agent interoperability specification with governance and management capabilities.
+  - [OWASP Agentic Applications Top 10 (2026)](https://genai.owasp.org/resource/agentic-ai-threats-and-mitigations/) - OWASP classification of the
+  top 10 security risks in agentic AI: excessive agency, trust boundary failures, identity spoofing, and more.
+  - [OWASP AI Security Verification Standard (AISVS)](https://github.com/OWASP/AISVS) - OWASP verification-controls standard with 14 chapters covering training data, input validation, model lifecycle, infrastructure, access control, supply chain, model behavior, memory/embeddings, autonomous orchestration (C9), MCP security (C10), adversarial robustness, privacy, monitoring, and human oversight. Releases v1.0 at OWASP Global AppSec EU Vienna on 24 June 2026.
+  - [OWASP Non-Human Identities (NHI) Top 10 (2025)](https://github.com/OWASP/www-project-non-human-identities-top-10) - OWASP awareness list of the top 10 risks for non-human identities (Improper Offboarding, Secret Leakage, Vulnerable Third-Party NHI, Insecure Authentication, Overprivileged NHI, Insecure Cloud Deployment Configurations, Long-Lived Secrets, Environment Isolation, NHI Reuse, Human Use of NHI). Risk-ranked using OWASP Risk Rating Methodology. Published December 2024.
+  - [Signed Decision Receipts (IETF)](https://datatracker.ietf.org/doc/draft-farley-acta-signed-receipts/) - Internet-Draft defining a portable, cryptographically signed receipt format for machine-to-machine access control decisions. Ed25519 + JCS canonicalization. Independently verifiable offline.
+  - [Singapore IMDA Model AI Governance Framework for Agentic
+  AI](https://www.imda.gov.sg/-/media/imda/files/about/emerging-tech-and-research/artificial-intelligence/mgf-for-agentic-ai.pdf) - Singapore IMDA framework defining eight components of an agentic system (Model, Instructions, Memory, Planning & Reasoning, Tools, Protocols, Controls, Logging/Monitoring) and four governance dimensions (bounding risks, human accountability, technical controls, end-user responsibility). v1.5 published 20 May 2026.
+  - [SPDX 3.0.1 AI Profile](https://github.com/spdx/spdx-3-model) - SPDX specification for AI Bill of Materials (AIBOM) with AIPackage and
+  DatasetPackage classes covering automation level, autonomy type, hyperparameters, model explainability, safety risk assessment, anonymization method, dataset size, and sensitive personal information flags. Stable since December 2024 (3.0.1); 3.1-RC1 pre-release adds EU AI Act-aligned dataset size properties (token count, item count, content duration).
 
 ## Research Papers
 
@@ -154,7 +169,7 @@ AI agents now hold real reach: email, CRMs, databases, financial systems. Guardr
 - [Constitutional AI: Harmlessness from AI Feedback](https://arxiv.org/abs/2212.08073) - Anthropic's methodology for training AI systems to be helpful, harmless, and honest using AI feedback.
 - [Multi-Agent Safety: A Systematic Survey](https://arxiv.org/abs/2502.09859) - Survey of safety challenges in multi-agent systems including coordination failures and emergent behaviors.
 - [Practices for Governing Agentic AI Systems](https://openai.com/index/practices-for-governing-agentic-ai-systems/) - OpenAI's whitepaper on governance practices: oversight, monitoring, and containment.
-- [Reflexion: Language Agents with Verbal Reinforcement Learning](https://arxiv.org/abs/2303.11366) - Self-reflective agent architecture with implications for building self-correcting, safer agents.
+- [Reflexion: Language Agents ith Verbal Reinforcement Learning](https://arxiv.org/abs/2303.11366) - Self-reflective agent architecture with implications for building self-correcting, safer agents.
 - [The Landscape of Emerging AI Agent Architectures](https://arxiv.org/abs/2404.11584) - Survey of agentic architectures with analysis of governance-relevant design patterns.
 - [The Rise and Potential of Large Language Model Based Agents: A Survey](https://arxiv.org/abs/2309.07864) - Survey covering agent construction, applications, and societal implications including safety.
 - [Toolformer: Language Models Can Teach Themselves to Use Tools](https://arxiv.org/abs/2302.04761) - Foundational work on tool-using LLMs, relevant to understanding tool governance requirements.
