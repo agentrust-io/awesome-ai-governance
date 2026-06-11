@@ -1,0 +1,12 @@
+# Link checker configuration for the awesome list.
+max_concurrency = 8
+timeout = 30
+max_retries = 2
+# Some sites return 403/429 to CI user agents; treat as alive.
+accept = ["200..=299", "403", "429"]
+user_agent = "Mozilla/5.0 (compatible; lychee link checker)"
+exclude = [
+    # Anchors into SPA docs resolve client-side
+    "^https://google\.github\.io/A2A/#/",
+]
+exclude_mail = true
