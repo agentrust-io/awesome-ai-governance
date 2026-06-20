@@ -1,0 +1,72 @@
+site_name: Awesome AI Agent Governance
+site_description: A curated list of tools, frameworks, standards, and resources for governing autonomous AI agents
+site_url: https://governance.agentrust-io.com
+repo_url: https://github.com/agentrust-io/awesome-ai-governance
+repo_name: agentrust-io/awesome-ai-governance
+edit_uri: edit/main/
+docs_dir: .
+exclude_docs: |
+  .github/
+  awesome-copilot-contributions/
+  lychee.toml
+  LICENSE
+
+theme:
+  name: material
+  palette:
+    - scheme: slate
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/brightness-7
+        name: Switch to light mode
+    - scheme: default
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/brightness-4
+        name: Switch to dark mode
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - toc.follow
+    - header.autohide
+  icon:
+    repo: fontawesome/brands/github
+  font:
+    text: Inter, system-ui, -apple-system, sans-serif
+    code: JetBrains Mono, Cascadia Code, monospace
+
+plugins:
+  - search
+  - minify:
+      minify_html: true
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - attr_list
+  - tables
+  - toc:
+      permalink: true
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/agentrust-io/awesome-ai-governance
+  generator: false
+
+nav:
+  - List: README.md
+  - Contributing: CONTRIBUTING.md
