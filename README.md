@@ -79,7 +79,7 @@ AI agents now hold real reach: email, CRMs, databases, financial systems. Guardr
 
 - [AgentScope](https://github.com/modelscope/agentscope) - Multi-agent platform with fault tolerance, agent-level monitoring, and configurable message validation.
 - [AutoGen](https://github.com/microsoft/autogen) - Multi-agent conversation framework with human oversight, code execution sandboxing, and conversation policies.
-- [CorvinOS](https://github.com/CorvinLabs/CorvinOS) - Self-hosted agentic OS with structural EU AI Act 2026 + GDPR compliance. Hash-chained audit log (GDPR Art. 30/32), deny-by-default per-user consent gate (GDPR Art. 6/7), Art. 17 erasure orchestrator, and Art. 50 bot-disclosure — all fail-closed, none configurable off. Connects local Ollama models and cloud providers to Discord, Telegram, WhatsApp, Slack, and Email. `pip install corvinos`. Apache-2.0.
+- [CorvinOS](https://github.com/CorvinLabs/CorvinOS) - Self-hosted agentic OS connecting local and cloud LLMs to Discord, Telegram, WhatsApp, Slack, and Email, with EU AI Act + GDPR compliance built into the architecture. Python, Apache-2.0.
 - [CrewAI](https://github.com/crewAIInc/crewAI) - Multi-agent orchestration with role-based agents, task delegation, and configurable guardrails.
 - [Dify](https://github.com/langgenius/dify) - LLM app development platform with content moderation, rate limiting, and annotation logging.
 - [Google Agent Development Kit (ADK)](https://github.com/google/adk-python) - Google's agent framework with safety callbacks, evaluation tools, and multi-agent session management.
