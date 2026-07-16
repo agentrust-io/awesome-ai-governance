@@ -174,6 +174,7 @@ AI agents now hold real reach: email, CRMs, databases, financial systems. Guardr
 
 *Practitioner guides, threat models, and industry analyses for agent governance.*
 
+- [AI Readiness & Governance Starter Kit](https://github.com/tinyopsstudio/ai-readiness-governance-kit) - MIT-licensed readiness questionnaire and working templates for prioritizing AI use cases, identifying governance gaps, comparing vendors, and assigning a 60-day action plan.
 - [Anthropic's Responsible Scaling Policy](https://www.anthropic.com/responsible-scaling-policy) - Framework for responsible AI deployment with AI Safety Levels (ASL) and safety evaluation commitments.
 - [Anthropic: Trustworthy Agents in Practice](https://www.anthropic.com/research/trustworthy-agents) - Anthropic's practical guidance on deploying trustworthy agents: balancing autonomy with human oversight, prompt-injection resistance, and operational safeguards.
 - [CSA AI Safety Initiative](https://cloudsecurityalliance.org/research/working-groups/artificial-intelligence) - Cloud Security Alliance publications on AI safety and security best practices.
