@@ -127,6 +127,7 @@ AI agents now hold real reach: email, CRMs, databases, financial systems. Guardr
 - [Counterfit](https://github.com/Azure/counterfit) - Azure's tool for assessing ML model security through adversarial attacks.
 - [CyberSecEval](https://github.com/meta-llama/PurpleLlama/tree/main/CybersecurityBenchmarks) - Meta's benchmark suite for LLM cybersecurity risks including insecure code generation and prompt extraction.
 - [Garak](https://github.com/NVIDIA/garak) - LLM vulnerability scanner from NVIDIA. Probes for hallucination, data leakage, prompt injection, toxicity, and more.
+- [Redcells](https://redcells.net) - Automated adversarial testing platform for LLMs you own or control. Runs structured red-team jobs (prompt injection, jailbreak, data leakage, etc.) with iterative attack→refine layers and per-layer judge scoring via web dashboard or API. ([Repo](https://github.com/awdemos/redcell))
 - [HouYi](https://github.com/LLMSecurity/HouYi) - Prompt injection attack framework for testing LLM-integrated application security boundaries.
 - [PyRIT](https://github.com/Azure/PyRIT) - Microsoft's Python Risk Identification Toolkit for red-teaming generative AI systems with automated attack strategies.
 - [Snyk Agent Scan](https://github.com/snyk/agent-scan) - Security scanner for AI agents and MCP servers. Detects vulnerabilities in tool configurations, permissions, and data flows.
