@@ -183,6 +183,7 @@ AI agents now hold real reach: email, CRMs, databases, financial systems. Guardr
 - [MITRE ATLAS](https://atlas.mitre.org/) - Adversarial Threat Landscape for AI Systems. Adversary tactics and techniques against AI/ML systems, structured like ATT&CK.
 - [OWASP Agentic AI Threats and Mitigations](https://genai.owasp.org/resource/agentic-ai-threats-and-mitigations/) - OWASP's threat catalog and mitigation strategies for agentic applications.
 - [OWASP Top 10 for LLM Applications](https://owasp.org/www-project-top-10-for-large-language-model-applications/) - Top 10 security risks for LLM applications including prompt injection, insecure output handling, and supply chain vulnerabilities.
+- [The Decisions AI Can't Make for Us](https://github.com/prashibadkur11-creator/The-Decisions-AI-Can-t-Make-For-Us-) - A PM framework with four oversight tiers and a decision ladder for classifying when AI agents need human approval.
 
 ## Conferences & Communities
 
