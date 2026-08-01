@@ -30,7 +30,10 @@ jobs:
         uses: actions/checkout@df4cb1c069e1874edd31b4311f1884172cec0e10 # v6.0.3
         with:
           repository: agentrust-io/.github
-          ref: 0b440ff18506b879983936b07a76faf06e920a15 # main as of 2026-06-11; bump deliberately
+          # Pinned deliberately: this workflow runs on pull_request_target
+          # with a write-capable token, so the code it checks out must not
+          # track a mutable ref. Bump this SHA after reviewing the diff.
+          ref: 0fe4520ee71a743fcd33f409fe366ee3e1da6f86 # main as of 2026-08-01
           persist-credentials: false
           sparse-checkout: |
             scripts
