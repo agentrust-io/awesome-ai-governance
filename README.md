@@ -88,11 +88,11 @@ AI agents now hold real reach: email, CRMs, databases, financial systems. Guardr
 - [LangChain](https://github.com/langchain-ai/langchain) - Composable framework with callbacks, tracing, and moderation chains for LLM applications.
 - [LangGraph](https://github.com/langchain-ai/langgraph) - Stateful, multi-actor agent framework with human-in-the-loop and persistence built in.
 - [LlamaIndex](https://github.com/run-llama/llama_index) - Data framework with observability callbacks, evaluation modules, and structured output guarantees.
+- [Microsoft Agent Framework (MAF)](https://github.com/microsoft/agent-framework) - is an open, multi-language framework for building **production-grade AI agents and multi-agent workflows** in **.NET and Python**.
 - [OpenAI Agents SDK](https://github.com/openai/openai-agents-python) - Official OpenAI SDK with built-in guardrails, input/output validation, and handoff controls.
 - [PydanticAI](https://github.com/pydantic/pydantic-ai) - Agent framework with type-safe tool definitions, structured outputs, and dependency injection.
 - [Semantic Kernel](https://github.com/microsoft/semantic-kernel) - Microsoft's AI orchestration SDK with plugin permission models, function filtering, and responsible AI hooks.
 - [smolagents](https://github.com/huggingface/smolagents) - Hugging Face's lightweight agent library with sandboxed code execution and security controls.
-- [Microsoft Agent Framework (MAF)](https://github.com/microsoft/agent-framework) - is an open, multi-language framework for building **production-grade AI agents and multi-agent workflows** in **.NET and Python**.
 
 ## Agent Identity & Attestation
 
