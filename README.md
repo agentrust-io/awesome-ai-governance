@@ -178,11 +178,13 @@ AI agents now hold real reach: email, CRMs, databases, financial systems. Guardr
 *Practitioner guides, threat models, and industry analyses for agent governance.*
 
 - [AI Agent Incident Register](https://companyscope.io/register) - A numbered public corpus of AI agent incidents, each analysed for the legal duty engaged, who bears liability across the chain (deployer / shared / vendor), and the governance that would have prevented it. Includes a Liability Crosswalk mapping OWASP's agentic Top 10, the NIST AI RMF, Singapore's IMDA framework, and the EU AI Act to each other and to who carries liability. Free to read and cite; CC BY 4.0 machine-readable feed.
-
 - [Anthropic's Responsible Scaling Policy](https://www.anthropic.com/responsible-scaling-policy) - Framework for responsible AI deployment with AI Safety Levels (ASL) and safety evaluation commitments.
 - [Anthropic: Trustworthy Agents in Practice](https://www.anthropic.com/research/trustworthy-agents) - Anthropic's practical guidance on deploying trustworthy agents: balancing autonomy with human oversight, prompt-injection resistance, and operational safeguards.
+- [AWS Responsible AI Standard](https://aws.amazon.com/ai/responsible-ai/) - Framework covering fairness, reliability, safety, and transparency in AI development.
 - [CSA AI Safety Initiative](https://cloudsecurityalliance.org/research/working-groups/artificial-intelligence) - Cloud Security Alliance publications on AI safety and security best practices.
+- [GCP Responsible AI Standard](https://cloud.google.com/responsible-ai) - Framework covering fairness, reliability, safety, and transparency in AI development.
 - [Google Secure AI Framework (SAIF)](https://safety.google/cybersecurity-advancements/saif/) - Conceptual framework for securing AI systems across the development and deployment lifecycle.
+- [Independent analysis of AI](https://artificialanalysis.ai/) - Independent analysis of AI; Understand the AI landscape to choose the best model and provider for your use case.
 - [Microsoft Responsible AI Standard](https://www.microsoft.com/en-us/ai/responsible-ai) - Framework covering fairness, reliability, safety, and transparency in AI development.
 - [MITRE ATLAS](https://atlas.mitre.org/) - Adversarial Threat Landscape for AI Systems. Adversary tactics and techniques against AI/ML systems, structured like ATT&CK.
 - [OWASP Agentic AI Threats and Mitigations](https://genai.owasp.org/resource/agentic-ai-threats-and-mitigations/) - OWASP's threat catalog and mitigation strategies for agentic applications.
