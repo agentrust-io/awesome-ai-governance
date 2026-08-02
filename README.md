@@ -92,6 +92,7 @@ AI agents now hold real reach: email, CRMs, databases, financial systems. Guardr
 - [PydanticAI](https://github.com/pydantic/pydantic-ai) - Agent framework with type-safe tool definitions, structured outputs, and dependency injection.
 - [Semantic Kernel](https://github.com/microsoft/semantic-kernel) - Microsoft's AI orchestration SDK with plugin permission models, function filtering, and responsible AI hooks.
 - [smolagents](https://github.com/huggingface/smolagents) - Hugging Face's lightweight agent library with sandboxed code execution and security controls.
+- [Microsoft Agent Framework (MAF)](https://github.com/microsoft/agent-framework) - is an open, multi-language framework for building **production-grade AI agents and multi-agent workflows** in **.NET and Python**.
 
 ## Agent Identity & Attestation
 
