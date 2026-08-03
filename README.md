@@ -27,7 +27,6 @@ AI agents now hold real reach: email, CRMs, databases, financial systems. Guardr
 - [Agent Governance Toolkit (AGT)](https://github.com/microsoft/agent-governance-toolkit) - Production governance layer for autonomous agents with a policy enforcement kernel (<0.1ms p99), execution rings (Ring 0-3), cryptographic Merkle audit logs, and integrations across LangChain, CrewAI, AutoGen, Google ADK, and more. Python + .NET + Rust. Now stewarded by the Agentic AI Foundation. Provides the software governance layer that integrates with hardware-attested enforcement via cMCP. ★4000+
 - [Coral Server](https://github.com/Coral-Protocol/coral-server) - Agent coordination and trust server enabling safe multi-agent collaboration with structured communication protocols.
 - [Cordum](https://github.com/cordum-io/cordum) - Agent control plane providing governance, lifecycle management, and policy enforcement for autonomous agents.
-- [Co-Governed Agentic SDLC (Software Development Life Cycle)](https://github.com/dradoaica/cogov-a-sdlc) - A spec‑first framework for human and agent co‑governance across SSDLC using the DevSecOps, Agile, TOGAF, and ITIL frameworks to ensure long‑term maintainability and to reduce AI‑induced delusional spiraling.
 - [Gate22](https://github.com/aipotheosis-labs/gate22) - MCP gateway with role-based access control, audit logging, and fine-grained permission management for tool access.
 - [IBM mcp-context-forge](https://github.com/IBM/mcp-context-forge) - Enterprise MCP gateway with context-aware guardrails, request routing, and compliance controls.
 - [Invariant Guardrails](https://github.com/invariantlabs-ai/invariant) - Rule-based guardrails engine with policy-as-code, trace analysis, and real-time intervention for agentic applications.
@@ -88,7 +87,7 @@ AI agents now hold real reach: email, CRMs, databases, financial systems. Guardr
 - [LangChain](https://github.com/langchain-ai/langchain) - Composable framework with callbacks, tracing, and moderation chains for LLM applications.
 - [LangGraph](https://github.com/langchain-ai/langgraph) - Stateful, multi-actor agent framework with human-in-the-loop and persistence built in.
 - [LlamaIndex](https://github.com/run-llama/llama_index) - Data framework with observability callbacks, evaluation modules, and structured output guarantees.
-- [Microsoft Agent Framework (MAF)](https://github.com/microsoft/agent-framework) - is an open, multi-language framework for building **production-grade AI agents and multi-agent workflows** in **.NET and Python**.
+- [Microsoft Agent Framework (MAF)](https://github.com/microsoft/agent-framework) - Successor to Semantic Kernel and AutoGen; open, multi-language framework for building production-grade AI agents and multi-agent workflows in .NET and Python.
 - [OpenAI Agents SDK](https://github.com/openai/openai-agents-python) - Official OpenAI SDK with built-in guardrails, input/output validation, and handoff controls.
 - [PydanticAI](https://github.com/pydantic/pydantic-ai) - Agent framework with type-safe tool definitions, structured outputs, and dependency injection.
 - [Semantic Kernel](https://github.com/microsoft/semantic-kernel) - Microsoft's AI orchestration SDK with plugin permission models, function filtering, and responsible AI hooks.
@@ -178,13 +177,13 @@ AI agents now hold real reach: email, CRMs, databases, financial systems. Guardr
 *Practitioner guides, threat models, and industry analyses for agent governance.*
 
 - [AI Agent Incident Register](https://companyscope.io/register) - A numbered public corpus of AI agent incidents, each analysed for the legal duty engaged, who bears liability across the chain (deployer / shared / vendor), and the governance that would have prevented it. Includes a Liability Crosswalk mapping OWASP's agentic Top 10, the NIST AI RMF, Singapore's IMDA framework, and the EU AI Act to each other and to who carries liability. Free to read and cite; CC BY 4.0 machine-readable feed.
+
 - [Anthropic's Responsible Scaling Policy](https://www.anthropic.com/responsible-scaling-policy) - Framework for responsible AI deployment with AI Safety Levels (ASL) and safety evaluation commitments.
 - [Anthropic: Trustworthy Agents in Practice](https://www.anthropic.com/research/trustworthy-agents) - Anthropic's practical guidance on deploying trustworthy agents: balancing autonomy with human oversight, prompt-injection resistance, and operational safeguards.
-- [AWS Responsible AI Standard](https://aws.amazon.com/ai/responsible-ai/) - Framework covering fairness, reliability, safety, and transparency in AI development.
+- [AWS Responsible AI Standard](https://aws.amazon.com/ai/responsible-ai/) - AWS’s approach to responsible AI. Covering a core set of dimensions that they assess and update over time as AI technology evolves.
 - [CSA AI Safety Initiative](https://cloudsecurityalliance.org/research/working-groups/artificial-intelligence) - Cloud Security Alliance publications on AI safety and security best practices.
-- [GCP Responsible AI Standard](https://cloud.google.com/responsible-ai) - Framework covering fairness, reliability, safety, and transparency in AI development.
+- [GCP Responsible AI Standard](https://cloud.google.com/responsible-ai) - GCP’s approach to responsible AI. Covering a set of AI principles and how they put them into practice.
 - [Google Secure AI Framework (SAIF)](https://safety.google/cybersecurity-advancements/saif/) - Conceptual framework for securing AI systems across the development and deployment lifecycle.
-- [Independent analysis of AI](https://artificialanalysis.ai/) - Independent analysis of AI; Understand the AI landscape to choose the best model and provider for your use case.
 - [Microsoft Responsible AI Standard](https://www.microsoft.com/en-us/ai/responsible-ai) - Framework covering fairness, reliability, safety, and transparency in AI development.
 - [MITRE ATLAS](https://atlas.mitre.org/) - Adversarial Threat Landscape for AI Systems. Adversary tactics and techniques against AI/ML systems, structured like ATT&CK.
 - [OWASP Agentic AI Threats and Mitigations](https://genai.owasp.org/resource/agentic-ai-threats-and-mitigations/) - OWASP's threat catalog and mitigation strategies for agentic applications.
