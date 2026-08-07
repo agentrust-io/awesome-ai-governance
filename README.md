@@ -101,7 +101,7 @@ AI agents now hold real reach: email, CRMs, databases, financial systems. Guardr
 - [Agent Passport System](https://github.com/aeoess/agent-passport-system) - Apache-2.0 protocol for agent identity, scoped delegation with monotonic narrowing, runtime enforcement, and signed action receipts. TypeScript and Python SDKs; active IETF Internet-Draft (draft-pidlisnyi-aps).
 - [Nobulex](https://github.com/arian-gogani/nobulex) - Bilateral receipt primitive for tamper-evident agent audit trails: two Ed25519 signatures per action (pre- and post-execution), hash-chained via JCS canonicalization (RFC 8785). The receipt-signing approach is [merged into AGT](https://github.com/microsoft/agent-governance-toolkit/pull/1333). MIT licensed.
 - [SPIFFE/SVID](https://spiffe.io/) - Secure Production Identity Framework for Everyone. Cryptographic workload identity applicable to agent-to-agent authentication.
-- [Tragentics](https://tragentics.com) - AI agent security platform giving every agent a permanent ID and per-call Ed25519 identity, with verified agent pairs, an encrypted Credential Vault, and a metadata-only audit trail of every call. Commercial SaaS.
+- [Tragentics](https://tragentics.com) - AI agent security platform: every agent gets a permanent ID, per-call Ed25519 identity for verified agent pairs, an encrypted Credential Vault that injects keys server-side so agents never hold them, a content-blind relay carrying every call, and a metadata-only audit trail. Commercial SaaS.
 - [W3C Decentralized Identifiers (DIDs)](https://www.w3.org/TR/did-core/) - W3C standard for decentralized, self-sovereign identifiers applicable to durable agent identity without centralized registries.
 
 ## Observability & Monitoring
