@@ -118,6 +118,7 @@ AI agents now hold real reach: email, CRMs, databases, financial systems. Guardr
 - [LangSmith](https://smith.langchain.com/) - LangChain's platform for debugging, testing, evaluating, and monitoring LLM applications.
 - [MLflow](https://github.com/mlflow/mlflow) - Open-source ML lifecycle platform with experiment tracking, model registry, and LLM evaluation tools.
 - [Prometheus](https://prometheus.io/) + [Grafana](https://grafana.com/) - Industry-standard metrics and visualization. Foundation for custom agent SLO dashboards.
+- [Provena](https://github.com/rajfirke/provena) - Open-source Python library for tamper-evident audit trails of AI agent context inputs: hash-chained logging, provenance validation, and freshness checking, with EU AI Act and OWASP ASI06 compliance reporting.
 - [traceAI](https://github.com/future-agi/traceAI) - Open-source OpenTelemetry-native tracing for LLM and agent apps with 50+ framework integrations.
 - [Weights & Biases](https://wandb.ai/) - ML experiment tracking with LLM tracing, evaluation pipelines, and model monitoring.
 
