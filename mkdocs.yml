@@ -13,6 +13,7 @@ exclude_docs: |
 
 theme:
   name: material
+  custom_dir: overrides
   palette:
     - scheme: slate
       primary: custom
@@ -43,6 +44,20 @@ theme:
 
 plugins:
   - search
+  - llmstxt:
+      full_output: llms-full.txt
+      markdown_description: >-
+        Awesome AI Agent Governance is a community-curated list of tools,
+        frameworks, standards, and research for governing autonomous AI agents.
+        It covers policy engines, audit and assurance frameworks, agent identity
+        and attestation, risk assessment, observability, and deployment
+        guidance. Maintained by AgenTrust alongside the TRACE, Agent Manifest,
+        cMCP and cA2A open standards.
+      sections:
+        The list:
+          - README.md
+        Contributing:
+          - CONTRIBUTING.md
   - minify:
       minify_html: true
 
@@ -73,3 +88,7 @@ extra_css:
 nav:
   - List: README.md
   - Contributing: CONTRIBUTING.md
+
+extra_javascript:
+  # Shared cross-project top navigation (TRACE / Manifest / cMCP / cA2A / ...)
+  - https://agentrust-io.com/supernav.js
