@@ -189,6 +189,7 @@ AI agents now hold real reach: email, CRMs, databases, financial systems. Guardr
 - [MITRE ATLAS](https://atlas.mitre.org/) - Adversarial Threat Landscape for AI Systems. Adversary tactics and techniques against AI/ML systems, structured like ATT&CK.
 - [OWASP Agentic AI Threats and Mitigations](https://genai.owasp.org/resource/agentic-ai-threats-and-mitigations/) - OWASP's threat catalog and mitigation strategies for agentic applications.
 - [OWASP Top 10 for LLM Applications](https://owasp.org/www-project-top-10-for-large-language-model-applications/) - Top 10 security risks for LLM applications including prompt injection, insecure output handling, and supply chain vulnerabilities.
+- [Preventive vs. Reactive AI Agent Governance](https://penholder.ai/preventive-vs-reactive-ai-agent-governance.html) - Comparison of preventive control (gating an agent's write to a system of record behind human approval before it commits) versus reactive governance (detecting and remediating harmful actions after they have executed), and the trade-offs of each model.
 
 ## Talks & Videos
 
