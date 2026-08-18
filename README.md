@@ -14,6 +14,7 @@ AI agents now hold real reach: email, CRMs, databases, financial systems. Guardr
 - [Agent Identity & Attestation](#agent-identity--attestation)
 - [Observability & Monitoring](#observability--monitoring)
 - [Security Testing](#security-testing)
+- [Fairness & Bias Auditing](#fairness--bias-auditing)
 - [Standards & Specifications](#standards--specifications)
 - [Research Papers](#research-papers)
 - [Industry Reports & Guidance](#industry-reports--guidance)
@@ -133,6 +134,12 @@ AI agents now hold real reach: email, CRMs, databases, financial systems. Guardr
 - [HouYi](https://github.com/LLMSecurity/HouYi) - Prompt injection attack framework for testing LLM-integrated application security boundaries.
 - [PyRIT](https://github.com/Azure/PyRIT) - Microsoft's Python Risk Identification Toolkit for red-teaming generative AI systems with automated attack strategies.
 - [Snyk Agent Scan](https://github.com/snyk/agent-scan) - Security scanner for AI agents and MCP servers. Detects vulnerabilities in tool configurations, permissions, and data flows.
+
+## Fairness & Bias Auditing
+
+*Toolkits for auditing AI-driven decision systems for algorithmic bias and measuring the effect of mitigation.*
+
+- [Fair Code](https://github.com/yakew7/Fair-Code) - Audits real-world-style AI decision systems (criminal justice, hiring, lending, insurance, welfare, hospital readmission, tenant screening) for algorithmic bias, pairing a biased baseline with a mitigated version and measured before/after fairness metrics.
 
 ## Standards & Specifications
 
