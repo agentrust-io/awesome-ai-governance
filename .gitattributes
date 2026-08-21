@@ -1,0 +1,5 @@
+# Normalize line endings so a contributor on Windows does not rewrite a whole file.
+# core.autocrlf turned a one-line listing addition into a 240-line diff twice (#57, #65).
+*.md text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
