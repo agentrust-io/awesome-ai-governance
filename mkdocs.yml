@@ -90,6 +90,7 @@ extra_css:
 
 nav:
   - List: README.md
+  - Sponsors: SPONSORS.md
   - Contributing: CONTRIBUTING.md
 
 extra_javascript:

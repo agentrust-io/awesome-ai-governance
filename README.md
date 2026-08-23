@@ -4,6 +4,11 @@
 
 AI agents now hold real reach: email, CRMs, databases, financial systems. Guardrails at the content layer probably hold, but enterprises need to run on proof, not probability. This list tracks the tools and practices for making agents safe, auditable, and trustworthy in production.
 
+Project support is recognized in [SPONSORS.md](SPONSORS.md). Sponsorship is
+separate from inclusion, ordering, editorial judgment, maintainership, and
+project governance; sponsored organizations and their competitors are evaluated
+under the same published contribution criteria.
+
 ## Contents
 
 - [Governance Frameworks](#governance-frameworks)
