@@ -43,6 +43,7 @@ under the same published contribution criteria.
 - [Regulus](https://github.com/neul-labs/regulus) - EU & UK compliance plane for Google ADK encoding 10 regulations (EU AI Act, GDPR, DORA, NIS2, EHDS, UK GDPR, FCA SYSC, PRA SS1/23, PRA SS2/21, NHS DSPT) and 6 governance frameworks as runtime ADK `BasePlugin` profiles; emits hash-chained audit envelopes with GRC adapters (ServiceNow IRM, OneTrust, MetricStream).
 - [ScopeBlind protect-mcp](https://github.com/ScopeBlind/scopeblind-gateway) - Security gateway for MCP servers with Cedar policy enforcement (AWS Cedar via WASM), Ed25519-signed decision receipts, issuer-blind spending authority (VOPRF), and multi-agent swarm tracking. [Merged into AGT](https://github.com/microsoft/agent-governance-toolkit/pull/667).
 - [TrinityGuard](https://github.com/AI45Lab/TrinityGuard) - Multi-agent safety framework with three-layer defense for detecting and preventing unsafe agent behaviors.
+- [WitnessOS](https://github.com/narko4u/witnessos) - Runtime governance layer producing evidence-grade receipts for every agent action, with policy evaluation before execution and a tamper-evident audit chain.
 
 ## End-to-End Governance: Software and Hardware
 
@@ -139,6 +140,7 @@ under the same published contribution criteria.
 - [CyberSecEval](https://github.com/meta-llama/PurpleLlama/tree/main/CybersecurityBenchmarks) - Meta's benchmark suite for LLM cybersecurity risks including insecure code generation and prompt extraction.
 - [Garak](https://github.com/NVIDIA/garak) - LLM vulnerability scanner from NVIDIA. Probes for hallucination, data leakage, prompt injection, toxicity, and more.
 - [HouYi](https://github.com/LLMSecurity/HouYi) - Prompt injection attack framework for testing LLM-integrated application security boundaries.
+- [mcp-evidence-validator](https://github.com/narko4u/mcp-evidence-validator) - Reference implementation of SHA-256 evidence chains for MCP agents: verifies declared tool contracts against observed runtime behavior (declared vs observed). Apache-2.0, OpenSSF Best Practices badge.
 - [PyRIT](https://github.com/Azure/PyRIT) - Microsoft's Python Risk Identification Toolkit for red-teaming generative AI systems with automated attack strategies.
 - [Snyk Agent Scan](https://github.com/snyk/agent-scan) - Security scanner for AI agents and MCP servers. Detects vulnerabilities in tool configurations, permissions, and data flows.
 
@@ -153,6 +155,7 @@ under the same published contribution criteria.
 *Protocols, specifications, and regulatory frameworks relevant to agent governance and interoperability.*
 
 - [Agent-to-Agent Protocol (A2A)](https://github.com/google/A2A) - Google-led open protocol for inter-agent communication, task delegation, and capability discovery.
+- [ACI/AIP/AJSON](https://github.com/narko4u/aci-spec) - Open standards for agent interoperability and governance: Agent Communication Interface (ACI), Agent Interaction Protocol (AIP), and Agent JSON (AJSON) machine-readable agent manifests for discovery, delegation, and governance.
 - [CoSAI Risk Map v1](https://github.com/cosai-oasis/secure-ai-tooling) - Coalition for Secure AI's component-level risk taxonomy for agentic AI systems: 23 components, 35 controls, 36 risks (including 6 agentic-specific), 10 personas, 8 lifecycle stages. Cross-walks to MITRE ATLAS, NIST AI RMF, STRIDE, OWASP LLM Top 10, ISO 22989, and EU AI Act. Launched June 2026.
 - [CSA Agentic Trust Framework](https://github.com/massivescale-ai/agentic-trust-framework) - Cloud Security Alliance / MassiveScale framework defining 5 Core Elements (Identity, Behavior, Data Governance, Segmentation, Incident Response) with 25 requirements across a 4-tier maturity model (Intern, Junior, Senior, Principal). Public Review Draft v0.9.1 (April 2026). Two conformance tiers: ATF Compatible / ATF Certified.
 - [CSA MCP Security Resource Center](https://modelcontextprotocol-security.io/) - Cloud Security Alliance community project for securing MCP servers and AI agents: hardening guides, audit database, and vulnerability database.
