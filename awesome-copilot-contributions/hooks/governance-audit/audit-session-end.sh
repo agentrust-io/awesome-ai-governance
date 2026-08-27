@@ -10,17 +10,18 @@ fi
 
 INPUT=$(cat)
 
-mkdir -p logs/copilot/governance
+MARKER_FILE="logs/copilot/governance/.session_marker"
 
-TIMESTAMP=$(date -u +"%Y-%m-%dT%H:%M:%SZ")
-LOG_FILE="logs/copilot/governance/audit.log"
+MARKER=0
+if [[ -f "$MARKER_FILE" ]]; then
+  MARKER=$(cat "$MARKER_FILE" 2>/dev/null || echo 0)
+fi
 
-# Count events from this session
 TOTAL=0
 THREATS=0
 if [[ -f "$LOG_FILE" ]]; then
-  TOTAL=$(wc -l < "$LOG_FILE" 2>/dev/null || echo 0)
-  THREATS=$(grep -c '"threat_detected"' "$LOG_FILE" 2>/dev/null || echo 0)
+  TOTAL=$(tail -n +"$((MARKER + 1))" "$LOG_FILE" | grep -c '"event"' || true)
+  THREATS=$(tail -n +"$((MARKER + 1))" "$LOG_FILE" | grep -c '"threat_detected"' || true)
 fi
 
 jq -Rn \

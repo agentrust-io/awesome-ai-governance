@@ -84,6 +84,10 @@ Events are written to `logs/copilot/governance/audit.log` in JSON Lines format:
 {"timestamp":"2026-01-15T10:32:00Z","event":"threat_detected","governance_level":"standard","threat_count":1,"threats":[{"category":"privilege_escalation","severity":0.8,"description":"Elevated privileges","evidence":"sudo"}]}
 {"timestamp":"2026-01-15T10:45:00Z","event":"session_end","total_events":12,"threats_detected":1}
 ```
+## Internal Files
+
+- `logs/copilot/governance/audit.log` - append-only JSON Lines audit trail (one JSON object per line).
+- `logs/copilot/governance/.session_marker` - internal bookkeeping file used by the hooks to remember where the current session's log entries begin, so `audit-session-end.sh` can report totals for the current session only instead of every session ever logged. Safe to delete; it is regenerated on the next session start. Already covered by the `logs/` entry recommended in `.gitignore` below.
 
 ## Requirements
 
