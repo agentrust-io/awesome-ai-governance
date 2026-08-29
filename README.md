@@ -147,6 +147,7 @@ under the same published contribution criteria.
 - [HouYi](https://github.com/LLMSecurity/HouYi) - Prompt injection attack framework for testing LLM-integrated application security boundaries.
 - [mcp-evidence-validator](https://github.com/narko4u/mcp-evidence-validator) - Reference implementation of SHA-256 evidence chains for MCP agents: verifies declared tool contracts against observed runtime behavior (declared vs observed). Apache-2.0, OpenSSF Best Practices badge.
 - [PyRIT](https://github.com/Azure/PyRIT) - Microsoft's Python Risk Identification Toolkit for red-teaming generative AI systems with automated attack strategies.
+- [sentinel-scan-cli](https://github.com/Ventrova/sentinel-scan-cli) - Free, open-source CLI (and MCP server) that scans MCP manifests and LLM apps for tool poisoning, prompt injection, and rug-pulls, with OWASP LLM Top 10-mapped findings.
 - [Snyk Agent Scan](https://github.com/snyk/agent-scan) - Security scanner for AI agents and MCP servers. Detects vulnerabilities in tool configurations, permissions, and data flows.
 
 ## Fairness & Bias Auditing
