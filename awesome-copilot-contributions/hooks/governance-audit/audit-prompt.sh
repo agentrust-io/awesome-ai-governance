@@ -87,7 +87,7 @@ if [[ ${#THREATS_FOUND[@]} -gt 0 ]]; then
     fi
     FIRST=false
 
-    THREATS_JSON+=$(jq -Rn \
+    THREATS_JSON+=$(jq -c -Rn \
       --arg cat "$category" \
       --arg sev "$severity" \
       --arg desc "$description" \
@@ -101,7 +101,7 @@ if [[ ${#THREATS_FOUND[@]} -gt 0 ]]; then
   done
   THREATS_JSON+="]"
 
-  jq -Rn \
+  jq -c -Rn \
     --arg timestamp "$TIMESTAMP" \
     --arg level "$LEVEL" \
     --argjson threats "$THREATS_JSON" \
@@ -121,7 +121,7 @@ if [[ ${#THREATS_FOUND[@]} -gt 0 ]]; then
     exit 1
   fi
 else
-  jq -Rn \
+  jq -c -Rn \
     --arg timestamp "$TIMESTAMP" \
     --arg level "$LEVEL" \
     '{"timestamp":$timestamp,"event":"prompt_scanned","governance_level":$level,"status":"clean"}' \

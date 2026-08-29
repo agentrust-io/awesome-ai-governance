@@ -10,6 +10,10 @@ fi
 
 INPUT=$(cat)
 
+mkdir -p logs/copilot/governance
+
+TIMESTAMP=$(date -u +"%Y-%m-%dT%H:%M:%SZ")
+LOG_FILE="logs/copilot/governance/audit.log"
 MARKER_FILE="logs/copilot/governance/.session_marker"
 
 MARKER=0
@@ -24,7 +28,7 @@ if [[ -f "$LOG_FILE" ]]; then
   THREATS=$(tail -n +"$((MARKER + 1))" "$LOG_FILE" | grep -c '"threat_detected"' || true)
 fi
 
-jq -Rn \
+jq -c -Rn \
   --arg timestamp "$TIMESTAMP" \
   --argjson total "$TOTAL" \
   --argjson threats "$THREATS" \
