@@ -17,6 +17,7 @@ under the same published contribution criteria.
 - [LLM Safety & Guardrails](#llm-safety--guardrails)
 - [Agent Frameworks with Governance Features](#agent-frameworks-with-governance-features)
 - [Agent Identity & Attestation](#agent-identity--attestation)
+- [Agent Action Records](#agent-action-records)
 - [Observability & Monitoring](#observability--monitoring)
 - [Security Testing](#security-testing)
 - [Fairness & Bias Auditing](#fairness--bias-auditing)
@@ -113,9 +114,20 @@ under the same published contribution criteria.
 
 - [Agent Card / AI Card](https://google.github.io/A2A/#/documentation?id=agent-card) - Specification for machine-readable agent capability and policy metadata, enabling discovery and trust decisions.
 - [Agent Passport System](https://github.com/aeoess/agent-passport-system) - Apache-2.0 protocol for agent identity, scoped delegation with monotonic narrowing, runtime enforcement, and signed action receipts. TypeScript and Python SDKs; active IETF Internet-Draft (draft-pidlisnyi-aps).
-- [Nobulex](https://github.com/arian-gogani/nobulex) - Bilateral receipt primitive for tamper-evident agent audit trails: two Ed25519 signatures per action (pre- and post-execution), hash-chained via JCS canonicalization (RFC 8785). The receipt-signing approach is [merged into AGT](https://github.com/microsoft/agent-governance-toolkit/pull/1333). MIT licensed.
+- [scitt-cose](https://github.com/action-state-group/scitt-cose) - Payload-agnostic IETF SCITT + COSE verification substrate (Python): verifies Signed Statements and RFC 9162 SHA-256 Receipts with inclusion/consistency proofs, offline. Open source to run yourself, or hit the free community verify service at verify.agentactioncapsule.org to check a receipt without trusting the issuer. Apache-2.0.
 - [SPIFFE/SVID](https://spiffe.io/) - Secure Production Identity Framework for Everyone. Cryptographic workload identity applicable to agent-to-agent authentication.
 - [W3C Decentralized Identifiers (DIDs)](https://www.w3.org/TR/did-core/) - W3C standard for decentralized, self-sovereign identifiers applicable to durable agent identity without centralized registries.
+
+## Agent Action Records
+
+*Standards and services for recording, attesting, and verifying what an agent actually did — signed, content-addressed, offline-verifiable action records, receipts, and transparency logs. Distinct from Agent Identity & Attestation, which covers who the agent is.*
+
+- [Agent Action Capsule (AAC)](https://github.com/action-state-group/agent-action-capsule) - Open SCITT statement profile (IETF draft-mih-scitt-agent-action-capsule) for recording and verifying what an AI agent did: each action is sealed into a content-addressed, offline-verifiable capsule (JCS/RFC 8785) a third party can check without calling the operator. Apache-2.0; reference library, test vectors, and standard site at agentactioncapsule.org.
+- [capsule-anchor](https://github.com/action-state-group/capsule-anchor) - Software for anyone to run their own vendor-neutral SCITT Transparency Service (RFC 9162): submit a digest, get a COSE receipt anchoring it into an append-only, independently auditable log that anyone can verify offline. Run your own, or use the free community instance at witness.agentactioncapsule.org. Apache-2.0.
+- [capsule-emit](https://github.com/action-state-group/capsule-emit) - The reference implementation of Agent Action Capsule: a one-call `emit()` producer that seals an action into a capsule, anchors it by default, and ships a ledger-view CLI with thin framework adapters. Apache-2.0.
+- [Nobulex](https://github.com/arian-gogani/nobulex) - Bilateral receipt primitive for tamper-evident agent audit trails: two Ed25519 signatures per action (pre- and post-execution), hash-chained via JCS canonicalization (RFC 8785). The receipt-signing approach is [merged into AGT](https://github.com/microsoft/agent-governance-toolkit/pull/1333). MIT licensed.
+- [PIC Standard (Provenance & Intent Contracts)](https://github.com/madeinplutofabio/pic-standard) - Open, local-first protocol for pre-execution action gating in AI agents: the agent declares intent, provenance, and evidence before a high-impact tool call; the verifier returns allow or block, failing closed on missing or invalid evidence, under a Trust Axiom that trust is verifier-derived, not producer-asserted. Apache-2.0. Pre-v1.0 draft.
+- [Signed Decision Receipts (IETF)](https://datatracker.ietf.org/doc/draft-farley-acta-signed-receipts/) - Internet-Draft defining a portable, cryptographically signed receipt format for machine-to-machine access control decisions. Ed25519 + JCS canonicalization. Independently verifiable offline.
 
 ## Observability & Monitoring
 
@@ -176,8 +188,6 @@ under the same published contribution criteria.
 - [OWASP Agentic Applications Top 10 (2026)](https://genai.owasp.org/resource/agentic-ai-threats-and-mitigations/) - OWASP classification of the top 10 security risks in agentic AI: excessive agency, trust boundary failures, identity spoofing, and more.
 - [OWASP AI Security Verification Standard (AISVS)](https://github.com/OWASP/AISVS) - OWASP verification-controls standard with 14 chapters covering training data, input validation, model lifecycle, infrastructure, access control, supply chain, model behavior, memory/embeddings, autonomous orchestration (C9), MCP security (C10), adversarial robustness, privacy, monitoring, and human oversight. Releases v1.0 at OWASP Global AppSec EU Vienna on 24 June 2026.
 - [OWASP Non-Human Identities (NHI) Top 10 (2025)](https://github.com/OWASP/www-project-non-human-identities-top-10) - OWASP awareness list of the top 10 risks for non-human identities (Improper Offboarding, Secret Leakage, Vulnerable Third-Party NHI, Insecure Authentication, Overprivileged NHI, Insecure Cloud Deployment Configurations, Long-Lived Secrets, Environment Isolation, NHI Reuse, Human Use of NHI). Risk-ranked using OWASP Risk Rating Methodology. Published December 2024.
-- [PIC Standard (Provenance & Intent Contracts)](https://github.com/madeinplutofabio/pic-standard) - Open, local-first protocol for pre-execution action gating in AI agents: the agent declares intent, provenance, and evidence before a high-impact tool call; the verifier returns allow or block, failing closed on missing or invalid evidence, under a Trust Axiom that trust is verifier-derived, not producer-asserted. Apache-2.0. Pre-v1.0 draft.
-- [Signed Decision Receipts (IETF)](https://datatracker.ietf.org/doc/draft-farley-acta-signed-receipts/) - Internet-Draft defining a portable, cryptographically signed receipt format for machine-to-machine access control decisions. Ed25519 + JCS canonicalization. Independently verifiable offline.
 - [Singapore IMDA Model AI Governance Framework for Agentic AI](https://www.imda.gov.sg/-/media/imda/files/about/emerging-tech-and-research/artificial-intelligence/mgf-for-agentic-ai.pdf) - Singapore IMDA framework defining eight components of an agentic system (Model, Instructions, Memory, Planning & Reasoning, Tools, Protocols, Controls, Logging/Monitoring) and four governance dimensions (bounding risks, human accountability, technical controls, end-user responsibility). v1.5 published 20 May 2026
 - [SPDX 3.0.1 AI Profile](https://github.com/spdx/spdx-3-model) - SPDX specification for AI Bill of Materials (AIBOM) with AIPackage and DatasetPackage classes covering automation level, autonomy type, hyperparameters, model explainability, safety risk assessment, anonymization method, dataset size, and sensitive personal information flags. Stable since December 2024 (3.0.1); 3.1-RC1 pre-release adds EU AI Act-aligned dataset size properties (token count, item count, content duration).
 
