@@ -200,6 +200,8 @@ under the same published contribution criteria.
 
 *Practitioner guides, threat models, and industry analyses for agent governance.*
 
+- [BrandQuill AI Governance Templates](https://github.com/brandquill/ai-governance-templates) - Seven free, locally editable Word and Excel templates for AI system inventory, vendor assessment, risk tracking, NIST AI RMF gap review, EU AI Act documentation, and workplace AI policy drafting.
+
 - [AI Agent Incident Register](https://companyscope.io/register) - A numbered public corpus of AI agent incidents, each analysed for the legal duty engaged, who bears liability across the chain (deployer / shared / vendor), and the governance that would have prevented it. Includes a Liability Crosswalk mapping OWASP's agentic Top 10, the NIST AI RMF, Singapore's IMDA framework, and the EU AI Act to each other and to who carries liability. Free to read and cite; CC BY 4.0 machine-readable feed.
 
 - [Singapore AI Governance Readiness Checklist](https://vyrwork.com/tools/singapore-ai-governance-readiness-checklist) - Free evidence-oriented planning checklist translating IMDA's 2026 agentic AI governance dimensions into 24 prompts for risk bounds, accountable ownership, lifecycle technical controls, and end-user responsibility. It is a planning aid, not a certification or compliance score.
