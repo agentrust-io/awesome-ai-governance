@@ -57,6 +57,7 @@ Project support is recognized in [SPONSORS.md](https://governance.agentrust-io.c
 - [sofagent](https://github.com/KongFangXun/sofagent) - Open-source harness for governing AI coding agents: ontology-driven workflows plus 24 commit-time audit rules over git diffs (secrets, out-of-scope edits, blind modifications, prompt injection), HMAC-signed tamper-evident audit history, and MCP tools for governance aggregation. MIT.
 - [TrinityGuard](https://github.com/AI45Lab/TrinityGuard) - Multi-agent safety framework with three-layer defense for detecting and preventing unsafe agent behaviors.
 - [WitnessOS](https://github.com/narko4u/witnessos) - Runtime governance layer producing evidence-grade receipts for every agent action, with policy evaluation before execution and a tamper-evident audit chain.
+- [YYLO](https://github.com/yylo-dev/yylo) - Command-line orchestrator that governs coding-agent repository changes: each task freezes the protected target SHA and runs in a dedicated branch/worktree behind typed task, validation, merge, and release-readiness boundaries; the merge queue owns risk-based review (low risk has no semantic reviewer, high risk two sequential reviewers on one frozen candidate) and stops as REVIEW_FINDINGS_EXHAUSTED instead of starting an unbounded review loop; runs retain declared receipt hashes and terminal manifests as receipt-backed repository changes. MIT, on npm as @yylo/cli; orchestrates Pi and Codex subagents.
 
 ## End-to-End Governance: Software and Hardware
 
