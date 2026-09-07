@@ -77,6 +77,8 @@ under the same published contribution criteria.
 - [Open Policy Agent (OPA)](https://github.com/open-policy-agent/opa) - CNCF general-purpose policy engine. Decouples policy decisions from application logic using the Rego language. Widely deployed for Kubernetes and API authorization.
 - [SpiceDB](https://github.com/authzed/spicedb) - Google Zanzibar-inspired database for fine-grained, relationship-based authorization. Useful for cross-agent and multi-tenant permission modeling.
 
+<a id="llm-safety--guardrails"></a>
+
 ## LLM Safety & Guardrails
 
 *Input/output filtering, content safety, and prompt protection for LLM-powered agents.*
@@ -113,6 +115,8 @@ under the same published contribution criteria.
 - [Semantic Kernel](https://github.com/microsoft/semantic-kernel) - Microsoft's AI orchestration SDK with plugin permission models, function filtering, and responsible AI hooks.
 - [smolagents](https://github.com/huggingface/smolagents) - Hugging Face's lightweight agent library with sandboxed code execution and security controls.
 
+<a id="agent-identity--attestation"></a>
+
 ## Agent Identity & Attestation
 
 *Protocols and tools for establishing cryptographic identity, trust, and verifiable provenance for AI agents. For hardware-attested agent identity and compliance records, see [End-to-End Governance: Software and Hardware](#end-to-end-governance-software-and-hardware).*
@@ -134,6 +138,8 @@ under the same published contribution criteria.
 - [Nobulex](https://github.com/arian-gogani/nobulex) - Bilateral receipt primitive for tamper-evident agent audit trails: two Ed25519 signatures per action (pre- and post-execution), hash-chained via JCS canonicalization (RFC 8785). The receipt-signing approach is [merged into AGT](https://github.com/microsoft/agent-governance-toolkit/pull/1333). MIT licensed.
 - [PIC Standard (Provenance & Intent Contracts)](https://github.com/madeinplutofabio/pic-standard) - Open, local-first protocol for pre-execution action gating in AI agents: the agent declares intent, provenance, and evidence before a high-impact tool call; the verifier returns allow or block, failing closed on missing or invalid evidence, under a Trust Axiom that trust is verifier-derived, not producer-asserted. Apache-2.0. Pre-v1.0 draft.
 - [Signed Decision Receipts (IETF)](https://datatracker.ietf.org/doc/draft-farley-acta-signed-receipts/) - Internet-Draft defining a portable, cryptographically signed receipt format for machine-to-machine access control decisions. Ed25519 + JCS canonicalization. Independently verifiable offline.
+
+<a id="observability--monitoring"></a>
 
 ## Observability & Monitoring
 
@@ -168,11 +174,15 @@ under the same published contribution criteria.
 - [sentinel-scan-cli](https://github.com/Ventrova/sentinel-scan-cli) - Free, open-source CLI (and MCP server) that scans MCP manifests and LLM apps for tool poisoning, prompt injection, and rug-pulls, with OWASP LLM Top 10-mapped findings.
 - [Snyk Agent Scan](https://github.com/snyk/agent-scan) - Security scanner for AI agents and MCP servers. Detects vulnerabilities in tool configurations, permissions, and data flows.
 
+<a id="fairness--bias-auditing"></a>
+
 ## Fairness & Bias Auditing
 
 *Toolkits for auditing AI-driven decision systems for algorithmic bias and measuring the effect of mitigation.*
 
 - [Fair Code](https://github.com/yakew7/Fair-Code) - Audits real-world-style AI decision systems (criminal justice, hiring, lending, insurance, welfare, hospital readmission, tenant screening) for algorithmic bias, pairing a biased baseline with a mitigated version and measured before/after fairness metrics.
+
+<a id="standards--specifications"></a>
 
 ## Standards & Specifications
 
@@ -213,6 +223,8 @@ under the same published contribution criteria.
 - [Toolformer: Language Models Can Teach Themselves to Use Tools](https://arxiv.org/abs/2302.04761) - Foundational work on tool-using LLMs, relevant to understanding tool governance requirements.
 - [Towards Autonomous AI Agents: A Safety-First Approach](https://arxiv.org/abs/2501.13649) - Framework for integrating safety constraints into autonomous agent design from the ground up.
 
+<a id="industry-reports--guidance"></a>
+
 ## Industry Reports & Guidance
 
 *Practitioner guides, threat models, and industry analyses for agent governance.*
@@ -233,6 +245,8 @@ under the same published contribution criteria.
 - [OWASP Top 10 for LLM Applications](https://owasp.org/www-project-top-10-for-large-language-model-applications/) - Top 10 security risks for LLM applications including prompt injection, insecure output handling, and supply chain vulnerabilities.
 - [EU AI Regulation Decoded](https://euaird.vercel.app/) - Practitioner reference mapping EU AI Act obligations to the specific evidence an auditor expects — by role, risk tier, and deadline — with common audit red flags. Includes a free interactive audit-readiness checklist and a CC BY 4.0 machine-readable [obligation-to-evidence dataset](https://github.com/Kroniquedubaboo/eu-ai-act-obligation-evidence-dataset).
 
+<a id="talks--videos"></a>
+
 ## Talks & Videos
 
 *Conference talks, keynotes, and recorded sessions on agent governance, runtime enforcement, and hardware-attested execution. Speaker and venue are listed so the source of each claim is visible.*
@@ -246,6 +260,8 @@ under the same published contribution criteria.
 - [NVIDIA Confidential Computing Attestation for Next-Generation AI](https://www.youtube.com/watch?v=vzQVZA7veO0) - R. Nertney and S. Gilson (NVIDIA) on GPU attestation and the evidence it produces for AI workloads. Confidential Computing Summit 2026.
 - [Open Source Friday: Governance for AI Agents](https://www.youtube.com/watch?v=bIioEmT2KEM) - Imran Siddique with GitHub on why prompts are not a control surface, plus the practical side of running a fast-growing governance project in the open. June 2026.
 - [Reliability in AI (Agentic) Systems](https://www.youtube.com/watch?v=jvHZAQdx-LU) - Panel on failure modes, evaluation, and what reliability means for systems that act. Confidential Computing Summit 2026.
+
+<a id="conferences--communities"></a>
 
 ## Conferences & Communities
 

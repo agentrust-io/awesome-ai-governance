@@ -7,6 +7,7 @@ on:
       - "docs/**"
       - "README.md"
       - "CONTRIBUTING.md"
+      - "SPONSORS.md"
       - "mkdocs.yml"
       - "requirements-docs.txt"
       - "CNAME"
@@ -50,7 +51,7 @@ jobs:
 
           if [ -d docs ]; then cp -r docs $BUILD/docs; fi
 
-          for fname in README.md CONTRIBUTING.md CNAME; do
+          for fname in README.md CONTRIBUTING.md SPONSORS.md CNAME; do
             if [ -f "$fname" ]; then cp "$fname" "$BUILD/$fname"; fi
           done
 
