@@ -139,6 +139,8 @@ under the same published contribution criteria.
 - [PIC Standard (Provenance & Intent Contracts)](https://github.com/madeinplutofabio/pic-standard) - Open, local-first protocol for pre-execution action gating in AI agents: the agent declares intent, provenance, and evidence before a high-impact tool call; the verifier returns allow or block, failing closed on missing or invalid evidence, under a Trust Axiom that trust is verifier-derived, not producer-asserted. Apache-2.0. Pre-v1.0 draft.
 - [Signed Decision Receipts (IETF)](https://datatracker.ietf.org/doc/draft-farley-acta-signed-receipts/) - Internet-Draft defining a portable, cryptographically signed receipt format for machine-to-machine access control decisions. Ed25519 + JCS canonicalization. Independently verifiable offline.
 
+- [YYLO Benchmark](https://github.com/yylo-dev/yylo-benchmark) - Evaluation layer for task prompts that records each attempt for verification: every candidate runs in a private fresh-repository workspace behind an initial workspace receipt plus a deterministic post-execution manifest covering Git HEAD/tree/refs/index/status and every worktree file; recovery reuses hash-verified terminals, and retained state is rejected unless the complete chain from state, plan, and attempt through receipt, manifest, terminal, and evidence forms one exact linkage. Deterministic and LLM-judge evaluations append immutable records with evidence and evaluator provenance hashes; running a plan grants no production or external authority. MIT; CLI `yylo-benchmark` (also delegated unchanged by `yy benchmark`) and library on npm as @yylo/benchmark; part of the YYLO suite alongside the YYLO CLI orchestrator.
+
 <a id="observability--monitoring"></a>
 
 ## Observability & Monitoring
