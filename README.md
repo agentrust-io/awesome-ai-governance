@@ -289,4 +289,4 @@ Join the community on [Discord](https://discord.gg/grgzFEHgkj).
 
 ---
 
-*Maintained by [Imran Siddique](https://github.com/imran-siddique), CPO at [OPAQUE Systems](https://opaque.co), creator of the [Agent Governance Toolkit](https://github.com/microsoft/agent-governance-toolkit), and contributor to OWASP ASI, CoSAI WS4, and the Agentic AI Foundation. The curator also maintains AGT, the agentrust-io tools (TRACE, cMCP, Agent Manifest), and the four component repos (Agent OS, AgentMesh, Agent SRE, Agent Hypervisor).*
+*Maintained by [Imran Siddique](https://github.com/imran-siddique), CPO at [OPAQUE Systems](https://opaque.co), creator of the [Agent Governance Toolkit](https://github.com/microsoft/agent-governance-toolkit), and contributor to OWASP ASI, CoSAI WS4, and the Agentic AI Foundation. The curator also maintains the [agentrust-io](https://github.com/agentrust-io) repositories: Weight Custody Manifest, Agent Manifest, cMCP, cA2A, TRACE and its conformance suite and registry, and AgenTrust Telemetry.*
