@@ -2,7 +2,7 @@
 
 > A curated list of tools, frameworks, standards, and resources for governing autonomous AI agents
 
-Awesome AI Agent Governance is a community-curated list of tools, frameworks, standards, and research for governing autonomous AI agents. It covers policy engines, audit and assurance frameworks, agent identity and attestation, risk assessment, observability, and deployment guidance. Maintained by AgenTrust alongside the TRACE, Agent Manifest, cMCP and cA2A open standards.
+Awesome AI Agent Governance is a community-curated list of tools, frameworks, standards, and research for governing autonomous AI agents. It covers policy engines, audit and assurance frameworks, agent identity and attestation, risk assessment, observability, and deployment guidance. Maintained by AgenTrust alongside its open specifications for verifiable AI: Weight Custody Manifest, Agent Manifest, cMCP, cA2A and TRACE.
 
 ## The list
 
