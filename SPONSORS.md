@@ -1,9 +1,8 @@
 # Sponsors
 
-Awesome AI Agent Governance is a community-curated open-source project.
-Sponsors provide funding, engineering time, infrastructure, or other in-kind
-support. Sponsorship does not confer project ownership, governance authority,
-or control over editorial decisions.
+Awesome AI Agent Governance is a community-curated open-source project. It is
+sponsored by OPAQUE Systems, which funds the engineering and infrastructure
+work behind it.
 
 ## Current sponsors
 
