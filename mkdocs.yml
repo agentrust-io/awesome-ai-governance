@@ -7,6 +7,7 @@ edit_uri: edit/main/
 docs_dir: .
 exclude_docs: |
   .github/
+  hooks/
   awesome-copilot-contributions/
   lychee.toml
   LICENSE
@@ -41,6 +42,12 @@ theme:
     - header.autohide
   icon:
     repo: fontawesome/brands/github
+
+hooks:
+  # The home page takes site_description; every other page gets a meta
+  # description from its first paragraph.
+  - hooks/home_description.py
+  - hooks/seo.py
 
 plugins:
   - search
