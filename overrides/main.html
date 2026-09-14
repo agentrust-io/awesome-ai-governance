@@ -35,6 +35,11 @@
   <meta name="twitter:description" content="{{ page_desc }}">
   <meta name="twitter:image" content="{{ og_image }}">
 
+  {#
+    The Organization node carries the hub's @id and sameAs list, so answer
+    engines resolve this list and the specification sites to one publisher.
+    Keep sameAs in step with the Organization node on agentrust-io.com.
+  #}
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -42,24 +47,40 @@
       {
         "@type": "CollectionPage",
         "name": "Awesome AI Agent Governance",
-        "description": "A community-curated list of tools, frameworks, standards, and research for governing autonomous AI agents. Covers policy engines, audit frameworks, risk assessments, and deployment guidance.",
+        "description": "A community-curated list of tools, frameworks, standards, and research for governing autonomous AI agents, maintained by AgenTrust alongside its open specifications for verifiable AI.",
         "url": "{{ config.site_url }}",
-        "isPartOf": { "@type": "WebSite", "name": "{{ config.site_name }}", "url": "{{ config.site_url }}" }
+        "isPartOf": { "@type": "WebSite", "name": "{{ config.site_name }}", "url": "{{ config.site_url }}" },
+        "publisher": { "@id": "https://agentrust-io.com/#organization" }
       },
       {
         "@type": "Organization",
+        "@id": "https://agentrust-io.com/#organization",
         "name": "AgenTrust",
-        "url": "https://agentrust-io.com",
+        "url": "https://agentrust-io.com/",
         "sameAs": [
           "https://github.com/agentrust-io",
-          "https://agentrust-io.com/demos/",
           "https://trace.agentrust-io.com",
-          "https://cmcp.agentrust-io.com",
           "https://manifest.agentrust-io.com",
-          "https://ca2a.agentrust-io.com"
+          "https://cmcp.agentrust-io.com",
+          "https://ca2a.agentrust-io.com",
+          "https://wcm.agentrust-io.com",
+          "https://tests.agentrust-io.com"
         ]
       }
     ]
   }
   </script>
+{% endblock %}
+
+{#
+  The sibling specification sites open with a line placing the page on the
+  AgenTrust chain. README.md is both this site's homepage and the GitHub
+  landing page, where that line would be noise, so it is added here and only on
+  the MkDocs homepage.
+#}
+{% block content %}
+  {% if page and page.is_homepage %}
+    <p><a href="https://agentrust-io.com/#chain">Build · A curated list alongside the AgenTrust specifications</a></p>
+  {% endif %}
+  {{ super() }}
 {% endblock %}

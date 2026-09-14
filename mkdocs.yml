@@ -51,8 +51,9 @@ plugins:
         frameworks, standards, and research for governing autonomous AI agents.
         It covers policy engines, audit and assurance frameworks, agent identity
         and attestation, risk assessment, observability, and deployment
-        guidance. Maintained by AgenTrust alongside the TRACE, Agent Manifest,
-        cMCP and cA2A open standards.
+        guidance. Maintained by AgenTrust alongside its open specifications for
+        verifiable AI: Weight Custody Manifest, Agent Manifest, cMCP, cA2A and
+        TRACE.
       sections:
         The list:
           - README.md
