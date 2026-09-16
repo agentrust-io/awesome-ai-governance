@@ -8,6 +8,10 @@ on:
       - "README.md"
       - "CONTRIBUTING.md"
       - "SPONSORS.md"
+      - "overrides/**"
+      - "hooks/**"
+      - "robots.txt"
+      - ".github/workflows/docs.yml"
       - "mkdocs.yml"
       - "requirements-docs.txt"
       - "CNAME"
@@ -51,7 +55,7 @@ jobs:
 
           if [ -d docs ]; then cp -r docs $BUILD/docs; fi
 
-          for fname in README.md CONTRIBUTING.md SPONSORS.md CNAME; do
+          for fname in README.md CONTRIBUTING.md SPONSORS.md CNAME robots.txt; do
             if [ -f "$fname" ]; then cp "$fname" "$BUILD/$fname"; fi
           done
 

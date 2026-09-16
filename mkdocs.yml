@@ -7,6 +7,7 @@ edit_uri: edit/main/
 docs_dir: .
 exclude_docs: |
   .github/
+  hooks/
   awesome-copilot-contributions/
   lychee.toml
   LICENSE
@@ -42,6 +43,12 @@ theme:
   icon:
     repo: fontawesome/brands/github
 
+hooks:
+  # The home page takes site_description; every other page gets a meta
+  # description from its first paragraph.
+  - hooks/home_description.py
+  - hooks/seo.py
+
 plugins:
   - search
   - llmstxt:
@@ -51,8 +58,9 @@ plugins:
         frameworks, standards, and research for governing autonomous AI agents.
         It covers policy engines, audit and assurance frameworks, agent identity
         and attestation, risk assessment, observability, and deployment
-        guidance. Maintained by AgenTrust alongside the TRACE, Agent Manifest,
-        cMCP and cA2A open standards.
+        guidance. Maintained by AgenTrust alongside its open specifications for
+        verifiable AI: Weight Custody Manifest, Agent Manifest, cMCP, cA2A and
+        TRACE.
       sections:
         The list:
           - README.md
@@ -86,7 +94,8 @@ extra_css:
   # Shared AgenTrust editorial design system. Deliberately the only stylesheet:
   # a local override here is how this site drifted to the Material default
   # violet last time. Change the shared file instead.
-  - https://agentrust-io.com/design-system.css
+  # The ?v= matches CSS_VERSION in agentrust-io.github.io tools/site_header.py. Browsers keep these files for hours, so bump it there and here together.
+  - https://agentrust-io.com/design-system.css?v=22
 
 nav:
   - List: README.md
@@ -95,4 +104,5 @@ nav:
 
 extra_javascript:
   # Shared cross-project top navigation (TRACE / Manifest / cMCP / cA2A / ...)
-  - https://agentrust-io.com/supernav.js
+  # The ?v= matches CSS_VERSION in agentrust-io.github.io tools/site_header.py. Browsers keep these files for hours, so bump it there and here together.
+  - https://agentrust-io.com/supernav.js?v=22
