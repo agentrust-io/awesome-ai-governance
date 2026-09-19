@@ -77,6 +77,7 @@ under the same published contribution criteria.
 
 *Language-level tools for expressing, validating, and enforcing authorization policies applicable to agent capability bounds, tool access, and data permissions.*
 
+- [agent-evidence-admission](https://github.com/astrogilda/agent-evidence-admission) - Apache-2.0 Kubernetes admission policies for OPA, Kyverno, and Sigstore policy-controller that evaluate agent-execution evidence, with documented enforcement limits and conformance checks.
 - [Casbin](https://github.com/casbin/casbin) - Cross-language authorization library supporting ACL, RBAC, and ABAC models. Available in Go, Python, Java, and more.
 - [Cedar](https://github.com/cedar-policy/cedar) - Amazon's policy language for fine-grained, type-safe access control. Used as the policy engine in the Agent Governance Toolkit. Fast, formally verified, and human-readable.
 - [GOPAL](https://github.com/Principled-Evolution/gopal) - Apache-2.0 library of 85 Rego policies encoding AI-governance regulations (EU AI Act, NIST AI RMF, ICAO/FAA/EASA aviation, FERPA/COPPA, fair lending) as executable allow/deny checks for the OPA engine, versioned per framework with allow/deny tests in CI.
@@ -140,6 +141,7 @@ under the same published contribution criteria.
 *Standards and services for recording, attesting, and verifying what an agent actually did — signed, content-addressed, offline-verifiable action records, receipts, and transparency logs. Distinct from Agent Identity & Attestation, which covers who the agent is.*
 
 - [Agent Action Capsule (AAC)](https://github.com/action-state-group/agent-action-capsule) - Open SCITT statement profile (IETF draft-mih-scitt-agent-action-capsule) for recording and verifying what an AI agent did: each action is sealed into a content-addressed, offline-verifiable capsule (JCS/RFC 8785) a third party can check without calling the operator. Apache-2.0; reference library, test vectors, and standard site at agentactioncapsule.org.
+- [agent-evidence-vectors](https://github.com/astrogilda/agent-evidence-vectors) - Apache-2.0 conformance corpora and reference verifiers for proposed agent-execution evidence predicates, SCITT/COSE carriage, and related evidence-binding profiles.
 - [agent-trace](https://github.com/oleg-vdv/agent-trace) - MIT TypeScript verifier for Python-generated, hash-chained agent journals. Checks sequence, chain linkage, and record hashes, reporting the first failing record's sequence number. Developed in the ProofByte monorepo.
 - [capsule-anchor](https://github.com/action-state-group/capsule-anchor) - Software for anyone to run their own vendor-neutral SCITT Transparency Service (RFC 9162): submit a digest, get a COSE receipt anchoring it into an append-only, independently auditable log that anyone can verify offline. Run your own, or use the free community instance at witness.agentactioncapsule.org. Apache-2.0.
 - [capsule-emit](https://github.com/action-state-group/capsule-emit) - The reference implementation of Agent Action Capsule: a one-call `emit()` producer that seals an action into a capsule, anchors it by default, and ships a ledger-view CLI with thin framework adapters. Apache-2.0.
@@ -198,6 +200,7 @@ under the same published contribution criteria.
 
 *Protocols, specifications, and regulatory frameworks relevant to agent governance and interoperability.*
 
+- [agent-evidence-vocabulary](https://github.com/astrogilda/agent-evidence-vocabulary) - Versioned CC0 vocabulary for adversarial-execution evidence claims, with crosswalk templates, governance rules, and validation tooling. Repository code and documentation are Apache-2.0.
 - [Agent-to-Agent Protocol (A2A)](https://github.com/google/A2A) - Google-led open protocol for inter-agent communication, task delegation, and capability discovery.
 - [Universal Commerce Protocol (UCP)](https://github.com/Universal-Commerce-Protocol/ucp) - Open protocol for interoperable agentic commerce, including checkout operations and response-carried request constraints that can narrow what a client is permitted to submit.
 - [ACI/AIP/AJSON](https://github.com/narko4u/aci-spec) - Open standards for agent interoperability and governance: Agent Communication Interface (ACI), Agent Interaction Protocol (AIP), and Agent JSON (AJSON) machine-readable agent manifests for discovery, delegation, and governance.
