@@ -171,6 +171,7 @@ Project support is recognized in [SPONSORS.md](https://governance.agentrust-io.c
 - [Counterfit](https://github.com/Azure/counterfit) - Azure's tool for assessing ML model security through adversarial attacks.
 - [CyberSecEval](https://github.com/meta-llama/PurpleLlama/tree/main/CybersecurityBenchmarks) - Meta's benchmark suite for LLM cybersecurity risks including insecure code generation and prompt extraction.
 - [Garak](https://github.com/NVIDIA/garak) - LLM vulnerability scanner from NVIDIA. Probes for hallucination, data leakage, prompt injection, toxicity, and more.
+- [Hermes Jailbench](https://github.com/hermes-labs-ai/hermes-jailbench) - Deterministic jailbreak regression battery that runs repeatable attacks against an LLM endpoint and scores refusal, partial, and compliance outcomes across runs.
 - [HouYi](https://github.com/LLMSecurity/HouYi) - Prompt injection attack framework for testing LLM-integrated application security boundaries.
 - [mcp-evidence-validator](https://github.com/narko4u/mcp-evidence-validator) - Reference implementation of SHA-256 evidence chains for MCP agents: verifies declared tool contracts against observed runtime behavior (declared vs observed). Apache-2.0, OpenSSF Best Practices badge.
 - [PyRIT](https://github.com/Azure/PyRIT) - Microsoft's Python Risk Identification Toolkit for red-teaming generative AI systems with automated attack strategies.
