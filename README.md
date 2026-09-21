@@ -203,6 +203,7 @@ under the same published contribution criteria.
 
 *Protocols, specifications, and regulatory frameworks relevant to agent governance and interoperability.*
 
+- [AI Agent Trace Schema](https://github.com/Isaacruwa/ai-agent-trace-schema) - Open JSON Schema normalizing AI-agent runtime events (tool calls, human interventions, errors, deployment changes) into a common format for compliance evidence, with converters for OpenTelemetry and LangSmith exports.
 - [agent-evidence-vocabulary](https://github.com/astrogilda/agent-evidence-vocabulary) - Versioned CC0 vocabulary for adversarial-execution evidence claims, with crosswalk templates, governance rules, and validation tooling. Repository code and documentation are Apache-2.0.
 - [Agent-to-Agent Protocol (A2A)](https://github.com/google/A2A) - Google-led open protocol for inter-agent communication, task delegation, and capability discovery.
 - [Universal Commerce Protocol (UCP)](https://github.com/Universal-Commerce-Protocol/ucp) - Open protocol for interoperable agentic commerce, including checkout operations and response-carried request constraints that can narrow what a client is permitted to submit.
