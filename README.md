@@ -206,6 +206,7 @@ under the same published contribution criteria.
 ## Standards & Specifications
 
 *Protocols, specifications, and regulatory frameworks relevant to agent governance and interoperability.*
+- [AIREP (AI Runtime Evidence Protocol)](https://github.com/halvrenofviryel/ai-runtime-evidence-protocol) - Experimental, vendor-neutral runtime-evidence format for AI decisions, control delivery, execution, and observed effects, with signed/hash-linked artifacts and explicit missing or unevaluated states. Open specification; not a ratified standard.
 
 - [AI Agent Trace Schema](https://github.com/Isaacruwa/ai-agent-trace-schema) - Open JSON Schema normalizing AI-agent runtime events (tool calls, human interventions, errors, deployment changes) into a common format for compliance evidence, with converters for OpenTelemetry and LangSmith exports.
 - [agent-evidence-vocabulary](https://github.com/astrogilda/agent-evidence-vocabulary) - Versioned CC0 vocabulary for adversarial-execution evidence claims, with crosswalk templates, governance rules, and validation tooling. Repository code and documentation are Apache-2.0.
