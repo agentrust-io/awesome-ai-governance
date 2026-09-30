@@ -123,6 +123,7 @@ Project support is recognized in [SPONSORS.md](https://governance.agentrust-io.c
 - [Haystack](https://github.com/deepset-ai/haystack) - End-to-end NLP framework with pipeline-based architecture supporting content filtering and validation.
 - [LangChain](https://github.com/langchain-ai/langchain) - Composable framework with callbacks, tracing, and moderation chains for LLM applications.
 - [LangGraph](https://github.com/langchain-ai/langgraph) - Stateful, multi-actor agent framework with human-in-the-loop and persistence built in.
+- [LightAgent](https://github.com/wanxingai/LightAgent) - Python agent framework with narrowing-only security contexts, scoped capability gates, durable human approvals, and application-owned verification before publishing immutable DAG artifacts.
 - [LlamaIndex](https://github.com/run-llama/llama_index) - Data framework with observability callbacks, evaluation modules, and structured output guarantees.
 - [Microsoft Agent Framework (MAF)](https://github.com/microsoft/agent-framework) - Microsoft's multi-agent orchestration framework for Python and .NET, with migration paths from Semantic Kernel and AutoGen. Governance-relevant pieces are human-in-the-loop workflow steps, checkpointing, and built-in OpenTelemetry tracing.
 - [OpenAI Agents SDK](https://github.com/openai/openai-agents-python) - Official OpenAI SDK with built-in guardrails, input/output validation, and handoff controls.
