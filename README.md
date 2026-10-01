@@ -197,6 +197,8 @@ under the same published contribution criteria.
 - [sentinel-scan-cli](https://github.com/Ventrova/sentinel-scan-cli) - Free, open-source CLI (and MCP server) that scans MCP manifests and LLM apps for tool poisoning, prompt injection, and rug-pulls, with OWASP LLM Top 10-mapped findings.
 - [Snyk Agent Scan](https://github.com/snyk/agent-scan) - Security scanner for AI agents and MCP servers. Detects vulnerabilities in tool configurations, permissions, and data flows.
 
+- [JudgeMyAI](https://judgemyai.com) - Managed red-teaming service: automated adversarial testing of AI products with human review on flagged cases.
+
 <a id="fairness--bias-auditing"></a>
 
 ## Fairness & Bias Auditing
@@ -204,6 +206,8 @@ under the same published contribution criteria.
 *Toolkits for auditing AI-driven decision systems for algorithmic bias and measuring the effect of mitigation.*
 
 - [Fair Code](https://github.com/yakew7/Fair-Code) - Audits real-world-style AI decision systems (criminal justice, hiring, lending, insurance, welfare, hospital readmission, tenant screening) for algorithmic bias, pairing a biased baseline with a mitigated version and measured before/after fairness metrics.
+
+- [JudgeMyAI](https://judgemyai.com) - LLM-as-a-judge evaluation audits: automated scoring pipelines producing per-item scores and version comparisons.
 
 <a id="standards--specifications"></a>
 
