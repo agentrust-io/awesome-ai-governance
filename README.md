@@ -192,12 +192,11 @@ under the same published contribution criteria.
 - [Garak](https://github.com/NVIDIA/garak) - LLM vulnerability scanner from NVIDIA. Probes for hallucination, data leakage, prompt injection, toxicity, and more.
 - [Hermes Jailbench](https://github.com/hermes-labs-ai/hermes-jailbench) - Deterministic jailbreak regression battery that runs repeatable attacks against an LLM endpoint and scores refusal, partial, and compliance outcomes across runs.
 - [HouYi](https://github.com/LLMSecurity/HouYi) - Prompt injection attack framework for testing LLM-integrated application security boundaries.
+- [JudgeMyAI](https://judgemyai.com) - Managed red-teaming service: structured adversarial testing of AI products run by the team, with human-checked reports.
 - [mcp-evidence-validator](https://github.com/narko4u/mcp-evidence-validator) - Reference implementation of SHA-256 evidence chains for MCP agents: verifies declared tool contracts against observed runtime behavior (declared vs observed). Apache-2.0, OpenSSF Best Practices badge.
 - [PyRIT](https://github.com/Azure/PyRIT) - Microsoft's Python Risk Identification Toolkit for red-teaming generative AI systems with automated attack strategies.
 - [sentinel-scan-cli](https://github.com/Ventrova/sentinel-scan-cli) - Free, open-source CLI (and MCP server) that scans MCP manifests and LLM apps for tool poisoning, prompt injection, and rug-pulls, with OWASP LLM Top 10-mapped findings.
 - [Snyk Agent Scan](https://github.com/snyk/agent-scan) - Security scanner for AI agents and MCP servers. Detects vulnerabilities in tool configurations, permissions, and data flows.
-
-- [JudgeMyAI](https://judgemyai.com) - Managed red-teaming service: automated adversarial testing of AI products with human review on flagged cases.
 
 <a id="fairness--bias-auditing"></a>
 
@@ -206,8 +205,6 @@ under the same published contribution criteria.
 *Toolkits for auditing AI-driven decision systems for algorithmic bias and measuring the effect of mitigation.*
 
 - [Fair Code](https://github.com/yakew7/Fair-Code) - Audits real-world-style AI decision systems (criminal justice, hiring, lending, insurance, welfare, hospital readmission, tenant screening) for algorithmic bias, pairing a biased baseline with a mitigated version and measured before/after fairness metrics.
-
-- [JudgeMyAI](https://judgemyai.com) - LLM-as-a-judge evaluation audits: automated scoring pipelines producing per-item scores and version comparisons.
 
 <a id="standards--specifications"></a>
 
