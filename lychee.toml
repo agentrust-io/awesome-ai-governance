@@ -6,13 +6,6 @@ max_retries = 2
 accept = ["200..=299", "403", "429"]
 user_agent = "Mozilla/5.0 (compatible; lychee link checker)"
 exclude = [
-    # Anchors into SPA docs resolve client-side
-    '^https://google\.github\.io/A2A/#/',
-    # Org repos are private until the 2026-06-23 launch; a repo-scoped
-    # GITHUB_TOKEN cannot see them. REMOVE these once the repos are public.
-    '^https://github\.com/agentrust-io/cmcp$',
-    '^https://github\.com/agentrust-io/agent-manifest$',
-    '^https://github\.com/agentrust-io/trace-spec$',
     # Slow hosts that regularly exceed CI timeouts
     '^https://aisafety\.camp/$',
     '^https://www\.aamas-conference\.org/',
