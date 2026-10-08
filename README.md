@@ -2,14 +2,14 @@
 
 Community updates and contributor highlights: [AgenTrust on LinkedIn](https://www.linkedin.com/company/agentrust-io/).
 
-> A curated list of tools, frameworks, standards, and resources for governing autonomous AI agents, covering safety, trust, identity, observability, and compliance across the agent lifecycle.
+> A curated list of tools, frameworks, standards and resources for governing AI agents: keeping them safe, knowing who they are, seeing what they do, and showing that they followed the rules.
 
-AI agents now hold real reach: email, CRMs, databases, financial systems. Guardrails at the content layer probably hold, but enterprises need to run on proof, not probability. This list tracks the tools and practices for making agents safe, auditable, and trustworthy in production.
+An AI agent is an AI system that takes actions on its own, such as sending email or updating a database, instead of only answering questions. Agents now reach email, CRMs, databases and financial systems. Content filters catch a lot of bad output, yet a company that lets agents act also needs a record it can check of what each agent did. This list collects the tools and practices that help make agents safe, checkable and trustworthy in real use. New to the terms? The [AgenTrust plain-terms list](https://agentrust-io.com/#plain-terms) explains the common ones in a line each.
 
-Project support is recognized in [SPONSORS.md](SPONSORS.md). Sponsorship is
-separate from inclusion, ordering, editorial judgment, maintainership, and
-project governance; sponsored organizations and their competitors are evaluated
-under the same published contribution criteria.
+Sponsors are listed in [SPONSORS.md](SPONSORS.md). Sponsorship has no effect on
+which entries are included, their order, editorial decisions, who maintains the
+list, or how the project is run. Sponsors and their competitors are judged by
+the same published contribution rules.
 
 ## Contents
 
@@ -31,7 +31,7 @@ under the same published contribution criteria.
 
 ## Governance Frameworks
 
-*Dedicated platforms and control planes for governing AI agent behavior, enforcing policies, and maintaining trust at runtime.*
+*Platforms that sit between an agent and the systems it uses, check each action against your rules while the agent runs, and keep a record of what was allowed or refused.*
 
 - [AAES](https://aaes.dev) - Governance layer for enterprise AI agents applying identity, human approvals, budgets, and sealed, offline-verifiable action records to routed agent actions; public documentation and OpenAPI specification, core repository private.
 - [Agent Governance Toolkit (AGT)](https://github.com/microsoft/agent-governance-toolkit) - Production governance layer for autonomous agents with a policy enforcement kernel (<0.1ms p99), execution rings (Ring 0-3), cryptographic Merkle audit logs, and integrations across LangChain, CrewAI, AutoGen, Google ADK, and more. Python + .NET + Rust. Provides the software governance layer that integrates with hardware-attested enforcement via cMCP. ★4000+
@@ -70,21 +70,21 @@ under the same published contribution criteria.
 
 ## End-to-End Governance: Software and Hardware
 
-*Tools and platforms that combine software policy enforcement with hardware-attested execution. The software layer (Cedar policy, audit logs, agent identity) is measured into a Trusted Execution Environment so that the governance claims cannot be forged by a privileged operator, a compromised runtime, or a supply chain attack. The result is a compliance artifact that any third party can verify offline without trusting the operator.*
+*Tools that pair software rules with evidence from the hardware. The rules, the logs and the agent's identity run inside a trusted execution environment (TEE), a protected area of the chip whose memory stays encrypted while it runs, and the chip signs a report of exactly what was loaded (an attestation). A privileged operator, a tampered runtime or a supply chain attack cannot forge that report. The result is a compliance record that anyone can check offline, without having to trust the company running the agent.*
 
-*The stack, in the order of the AgenTrust chain from weights to evidence: Weight Custody Manifest releases model-weight keys only to an attested runtime. Agent Manifest binds all ten deployment artifacts into one signed identity document. AGT enforces Cedar policies at the software layer, cMCP carries those policies into a TEE for MCP tool calls, and cA2A is a profile for verifiable agent-to-agent (A2A) delegation. TRACE records the attested outcome. OPAQUE Systems offers the commercial OPAQUE Confidential AI Platform™.*
+*The stack, in the order of the AgenTrust chain from model weights to evidence: Weight Custody Manifest hands out the key that decrypts a model's weights only to a machine whose attestation checks out. Agent Manifest signs all ten parts of an agent deployment into one identity document. AGT checks actions against Cedar policies in software, cMCP runs those checks inside a TEE for MCP tool calls (MCP is a common way agents connect to tools), and cA2A is a profile for checkable handoffs of work between agents over A2A. TRACE records the result as a signed receipt. OPAQUE Systems offers the commercial OPAQUE Confidential AI Platform™.*
 
-- [Agent Manifest](https://github.com/agentrust-io/agent-manifest) - Signs all 10 agent deployment artifacts (system prompt, policy bundle, model identity, tool schemas, RAG corpus, memory baseline, decision trace, A2A delegation chain, build provenance, HITL approvals) into a single tamper-evident record. Hardware attestation via TPM, AMD SEV-SNP, or Intel TDX. Four conformance levels, with compliance mappings for the EU AI Act, DORA, GDPR, and HIPAA. 197 conformance tests. Python. Developer preview.
-- [cMCP (Confidential MCP Gateway)](https://github.com/agentrust-io/cmcp) - An MCP gateway that evaluates tool calls against Cedar policy inside a TEE. In hardware deployments the policy bundle is measured into attestation before any code runs and the signing key stays in the enclave; software mode provides no hardware isolation. Every tool call produces a signed GatewayClaim bound to the hardware measurement. Supports TPM, AMD SEV-SNP, and Intel TDX attestation. Developer preview.
-- [cA2A (Confidential A2A)](https://github.com/agentrust-io/ca2a) - A profile for the Agent2Agent (A2A) protocol, where A2A's Signed Agent Card verifies only a domain owner. Adds attested, attenuated delegation (each hop's authority is a provable subset of its parent's), runtime attestation of the peer, a sealed peer channel (binding the seal to a verified measurement on a live call is on the roadmap), and an offline-verifiable provenance record per hop. Reuses the delegation semantics from Agent Manifest and the TEE and policy primitives from cMCP. Python, developer preview; installable with `pip install ca2a-runtime`.
+- [Agent Manifest](https://github.com/agentrust-io/agent-manifest) - Signs all 10 parts of an agent deployment (system prompt, policy bundle, model identity, tool schemas, RAG corpus, memory baseline, decision trace, A2A delegation chain, build provenance, HITL approvals) into one record, so any later change to any part shows up. Can include a signed hardware report (attestation) from a TPM, AMD SEV-SNP or Intel TDX chip. Four conformance levels, with compliance mappings for the EU AI Act, DORA, GDPR, and HIPAA. 197 conformance tests. Python. Developer preview.
+- [cMCP (Confidential MCP Gateway)](https://github.com/agentrust-io/cmcp) - A gateway that sits between an agent and its MCP tools and checks each tool call against Cedar policy inside a TEE. On real hardware, the policy bundle is recorded in the chip's signed report before any code runs, and the signing key never leaves the protected area; software mode gives no hardware protection. Every tool call produces a signed receipt (a GatewayClaim) tied to that hardware record. Supports TPM, AMD SEV-SNP, and Intel TDX attestation. Developer preview.
+- [cA2A (Confidential A2A)](https://github.com/agentrust-io/ca2a) - A profile for the Agent2Agent (A2A) protocol, which agents use to hand work to each other. A2A's Signed Agent Card proves only who owns a domain. cA2A adds delegation where each agent can pass on the same or less authority than it received, provably; a hardware check of the other agent's runtime; a sealed channel between the two (tying the seal to a verified hardware measurement on a live call is on the roadmap); and a record of each handoff that can be checked offline. Reuses the delegation rules from Agent Manifest and the TEE and policy building blocks from cMCP. Python, developer preview; installable with `pip install ca2a-runtime`.
 - [OPAQUE Systems](https://opaque.co) - The OPAQUE Confidential AI Platform™, with OPAQUE Agent Control™ for governing agent actions and OPAQUE Confidential Core™ for running them in TEEs with hardware attestation. Sponsor of this list and of the AgenTrust specifications (see [SPONSORS.md](SPONSORS.md)). The open cMCP and Agent Manifest repositories mark their OPAQUE attestation provider as not implemented. Commercial.
-- [TRACE (Trust Runtime Attestation and Compliance Evidence)](https://github.com/agentrust-io/trace-spec) - Open specification (a Series of LF Projects, with an AAIF Sandbox proposal open) and Python SDK for portable, signed runtime evidence. Each agent run produces a signed record of model identity, runtime, policy version, and tool call transcript that anyone can check offline without calling the operator; hardware provenance requires separately verified attestation. Built on IETF RATS (RFC 9334), EAT (RFC 9711), SCITT, SLSA, and SPIFFE. Spec v0.2.
-- [Weight Custody Manifest (WCM)](https://github.com/agentrust-io/weight-custody-manifest) - Open, pre-1.0 specification and Python SDK for releasing model-weight decryption keys only to a workload whose CPU (and, when required, GPU) attestation matches a signed manifest, with short-lived approval and evidence of each release. The reference SDK verifies AMD SEV-SNP, Intel TDX, and NVIDIA H100 CC evidence captured on real hardware. Against an operator who physically owns the machine it offers accountability rather than cryptographic custody. Apache-2.0; `pip install weight-custody-manifest`; docs at [wcm.agentrust-io.com](https://wcm.agentrust-io.com).
+- [TRACE (Trust Runtime Attestation and Compliance Evidence)](https://github.com/agentrust-io/trace-spec) - Open specification (a Series of LF Projects, with an AAIF Sandbox proposal open) and Python SDK for signed receipts of what an agent run did. Each run produces a signed record of the model, the runtime, the policy version and the tool calls, which anyone can check offline without contacting the operator; proving which hardware it ran on needs a separately verified attestation. Built on IETF RATS (RFC 9334), EAT (RFC 9711), SCITT, SLSA, and SPIFFE. Spec v0.2.
+- [Weight Custody Manifest (WCM)](https://github.com/agentrust-io/weight-custody-manifest) - Open, pre-1.0 specification and Python SDK that hands out the key to decrypt a model's weights only to a workload whose CPU (and, when required, GPU) attestation matches a signed manifest, with short-lived approval and a record of each release. The reference SDK verifies AMD SEV-SNP, Intel TDX, and NVIDIA H100 CC evidence captured on real hardware. Against an operator who physically owns the machine it offers accountability rather than cryptographic custody. Apache-2.0; `pip install weight-custody-manifest`; docs at [wcm.agentrust-io.com](https://wcm.agentrust-io.com).
 - [SourceryKit](https://github.com/ProvablyAI/sourcerykit) - Verifies an agent's outbound requests and MCP handoffs against a source of truth using zero-knowledge proofs, so a call only goes out if the agent's claims check out. Hooks into the HTTP libraries, logs every outbound call, and blocks endpoints not on the trusted allow-list. Python, BSL 1.1 (source-available), with a hosted backend that runs the proof and source-of-truth check.
 
 ## Policy as Code
 
-*Language-level tools for expressing, validating, and enforcing authorization policies applicable to agent capability bounds, tool access, and data permissions.*
+*Languages and engines for writing access rules as code and checking them. Useful for limiting what an agent may do, which tools it may call and which data it may touch.*
 
 - [agent-evidence-admission](https://github.com/probityai/agent-evidence-admission) - Apache-2.0 Kubernetes admission policies for OPA, Kyverno, and Sigstore policy-controller that evaluate agent-execution evidence, with documented enforcement limits and conformance checks.
 - [Casbin](https://github.com/casbin/casbin) - Cross-language authorization library supporting ACL, RBAC, and ABAC models. Available in Go, Python, Java, and more.
@@ -97,7 +97,7 @@ under the same published contribution criteria.
 
 ## LLM Safety & Guardrails
 
-*Input/output filtering, content safety, and prompt protection for LLM-powered agents.*
+*Filters that check what goes into and comes out of a language model (LLM): unsafe content, leaked personal data, and prompt injection, which is text written to hijack the model's instructions.*
 
 - [ai-evaluation](https://github.com/future-agi/ai-evaluation) - Open-source LLM evaluation framework with 50+ metrics, LLM-as-Judge, and guardrail scanners (jailbreak, PII, injection).
 - [Arthur Shield](https://www.arthur.ai/product/shield) - Firewall for LLMs that detects hallucinations, toxicity, PII leakage, and prompt injection in real time.
@@ -113,7 +113,7 @@ under the same published contribution criteria.
 
 ## Agent Frameworks with Governance Features
 
-*Agent development frameworks that include governance, safety, or policy hooks.*
+*Toolkits for building agents that include places to plug in safety checks, human approval or policy rules.*
 
 - [AgentScope](https://github.com/modelscope/agentscope) - Multi-agent platform with fault tolerance, agent-level monitoring, and configurable message validation.
 - [AutoGen](https://github.com/microsoft/autogen) - Multi-agent conversation framework with human oversight, code execution sandboxing, and conversation policies.
@@ -137,7 +137,7 @@ under the same published contribution criteria.
 
 ## Agent Identity & Attestation
 
-*Protocols and tools for establishing cryptographic identity, trust, and verifiable provenance for AI agents. For hardware-attested agent identity and compliance records, see [End-to-End Governance: Software and Hardware](#end-to-end-governance-software-and-hardware).*
+*Ways to give an AI agent an identity that others can check with cryptography, and to trace where it came from. For agent identity backed by a signed hardware report, see [End-to-End Governance: Software and Hardware](#end-to-end-governance-software-and-hardware).*
 
 - [Agent Card / AI Card](https://a2a-protocol.org/latest/specification/#8-agent-discovery-the-agent-card) - Specification for machine-readable agent capability and policy metadata, enabling discovery and trust decisions.
 - [Agent Passport System](https://github.com/aeoess/agent-passport-system) - Apache-2.0 protocol for agent identity, scoped delegation with monotonic narrowing, runtime enforcement, and signed action receipts. TypeScript and Python SDKs; active IETF Internet-Draft (draft-pidlisnyi-aps).
@@ -149,7 +149,7 @@ under the same published contribution criteria.
 
 ## Agent Action Records
 
-*Standards and services for recording, attesting, and verifying what an agent actually did — signed, content-addressed, offline-verifiable action records, receipts, and transparency logs. Distinct from Agent Identity & Attestation, which covers who the agent is.*
+*Formats and services that record what an agent actually did as signed receipts and public logs, which anyone can check later, offline if needed. The Agent Identity & Attestation section covers who the agent is; this one covers what it did.*
 
 - [Agent Action Capsule (AAC)](https://github.com/action-state-group/agent-action-capsule) - Open SCITT statement profile (IETF draft-mih-scitt-agent-action-capsule) for recording and verifying what an AI agent did: each action is sealed into a content-addressed, offline-verifiable capsule (JCS/RFC 8785) a third party can check without calling the operator. Apache-2.0; reference library, test vectors, and standard site at agentactioncapsule.org.
 - [agent-evidence-vectors](https://github.com/probityai/agent-evidence-vectors) - Apache-2.0 conformance corpora and reference verifiers for proposed agent-execution evidence predicates, SCITT/COSE carriage, and related evidence-binding profiles.
@@ -167,7 +167,7 @@ under the same published contribution criteria.
 
 ## Observability & Monitoring
 
-*Platforms for tracing, monitoring, evaluating, and debugging AI agent behavior.*
+*Tools for tracing, monitoring, testing and debugging what AI agents do.*
 
 - [AgentOps](https://github.com/AgentOps-AI/agentops) - Agent observability SDK with session replay, LLM cost tracking, compliance monitoring, and failure detection.
 - [Arize / Phoenix](https://github.com/Arize-ai/phoenix) - Open-source AI observability with LLM tracing, evaluation, retrieval analysis, and experiment tracking.
@@ -187,7 +187,7 @@ under the same published contribution criteria.
 
 ## Security Testing
 
-*Scanners, red-teaming tools, and frameworks for testing the security of AI agents and LLMs.*
+*Scanners, red-teaming tools (which run simulated attacks) and frameworks for testing how AI agents and LLMs hold up against attackers.*
 
 - [Commit](https://getcommit.dev) - Supply chain trust scoring for npm, PyPI, Cargo, and Go packages. Scores maintainer concentration, OIDC publisher gaps, and release consistency to surface high-risk dependency patterns that vulnerability databases miss. CLI, GitHub Action, IDE hooks, REST API, and MCP server.
 - [Counterfit](https://github.com/Azure/counterfit) - Azure's tool for assessing ML model security through adversarial attacks.
@@ -204,7 +204,7 @@ under the same published contribution criteria.
 
 ## Fairness & Bias Auditing
 
-*Toolkits for auditing AI-driven decision systems for algorithmic bias and measuring the effect of mitigation.*
+*Toolkits for checking AI decision systems for unfair bias and measuring whether a fix worked.*
 
 - [Fair Code](https://github.com/yakew7/Fair-Code) - Audits real-world-style AI decision systems (criminal justice, hiring, lending, insurance, welfare, hospital readmission, tenant screening) for algorithmic bias, pairing a biased baseline with a mitigated version and measured before/after fairness metrics.
 
@@ -212,7 +212,7 @@ under the same published contribution criteria.
 
 ## Standards & Specifications
 
-*Protocols, specifications, and regulatory frameworks relevant to agent governance and interoperability.*
+*Protocols, specifications and regulations that matter for governing agents and for making agents from different vendors work together.*
 - [AIREP (AI Runtime Evidence Protocol)](https://github.com/halvrenofviryel/ai-runtime-evidence-protocol) - Experimental, vendor-neutral runtime-evidence format for AI decisions, control delivery, execution, and observed effects, with signed/hash-linked artifacts and explicit missing or unevaluated states. Open specification; not a ratified standard.
 
 - [AI Agent Trace Schema](https://github.com/Isaacruwa/ai-agent-trace-schema) - Open JSON Schema normalizing AI-agent runtime events (tool calls, human interventions, errors, deployment changes) into a common format for compliance evidence, with converters for OpenTelemetry and LangSmith exports.
@@ -239,7 +239,7 @@ under the same published contribution criteria.
 
 ## Research Papers
 
-*Key academic works on agent safety, multi-agent governance, and trust in AI systems.*
+*Key academic papers on agent safety, governing groups of agents that work together, and trust in AI systems.*
 
 - [A Survey on Large Language Model based Autonomous Agents](https://arxiv.org/abs/2308.11432) - Comprehensive survey of LLM-based agents covering architecture, capabilities, and safety.
 - [Agent Safety: An Emerging Research Direction](https://arxiv.org/abs/2502.09689) - Analysis of safety challenges unique to autonomous AI agents beyond traditional LLM safety.
@@ -256,7 +256,7 @@ under the same published contribution criteria.
 
 ## Industry Reports & Guidance
 
-*Practitioner guides, threat models, and industry analyses for agent governance.*
+*Practical guides, threat models (lists of how a system can be attacked) and industry analysis on governing agents.*
 
 - [AI Agent Incident Register](https://companyscope.io/register) - A numbered public corpus of AI agent incidents, each analysed for the legal duty engaged, who bears liability across the chain (deployer / shared / vendor), and the governance that would have prevented it. Includes a Liability Crosswalk mapping OWASP's agentic Top 10, the NIST AI RMF, Singapore's IMDA framework, and the EU AI Act to each other and to who carries liability. Free to read and cite; CC BY 4.0 machine-readable feed.
 
@@ -272,14 +272,14 @@ under the same published contribution criteria.
 - [MITRE ATLAS](https://atlas.mitre.org/) - Adversarial Threat Landscape for AI Systems. Adversary tactics and techniques against AI/ML systems, structured like ATT&CK.
 - [OWASP Agentic AI Threats and Mitigations](https://genai.owasp.org/resource/agentic-ai-threats-and-mitigations/) - OWASP's threat catalog and mitigation strategies for agentic applications.
 - [OWASP Top 10 for LLM Applications](https://owasp.org/www-project-top-10-for-large-language-model-applications/) - Top 10 security risks for LLM applications including prompt injection, insecure output handling, and supply chain vulnerabilities.
-- [EU AI Regulation Decoded](https://euaird.vercel.app/) - Practitioner reference mapping EU AI Act obligations to the specific evidence an auditor expects — by role, risk tier, and deadline — with common audit red flags. Includes a free interactive audit-readiness checklist and a CC BY 4.0 machine-readable [obligation-to-evidence dataset](https://github.com/Kroniquedubaboo/eu-ai-act-obligation-evidence-dataset).
+- [EU AI Regulation Decoded](https://euaird.vercel.app/) - Practitioner reference mapping EU AI Act obligations to the specific evidence an auditor expects (by role, risk tier, and deadline), with common audit red flags. Includes a free interactive audit-readiness checklist and a CC BY 4.0 machine-readable [obligation-to-evidence dataset](https://github.com/Kroniquedubaboo/eu-ai-act-obligation-evidence-dataset).
 - [Model Trust Gate](https://github.com/josephManzambi/model-trust-gate) - Adopter-side method for deciding whether to trust one AI model for one use, ending in a signed, expiring record with a JSON schema a policy engine can check.
 
 <a id="talks--videos"></a>
 
 ## Talks & Videos
 
-*Conference talks, keynotes, and recorded sessions on agent governance, runtime enforcement, and hardware-attested execution. Speaker and venue are listed so the source of each claim is visible.*
+*Recorded talks and sessions on governing agents, enforcing rules while agents run, and running agents on hardware that can prove what it ran. Speaker and venue are listed so you can see who said what.*
 
 - [Agentic AI Is Running Your Infrastructure](https://www.youtube.com/watch?v=1Z_7hvy_-YE) - Mike Bursell, Confidential Computing Consortium. Keynote on what changes when agents operate infrastructure rather than assist people, and where confidential computing sits in that trust model. Confidential Computing Summit 2026.
 - [Agentic Zero Trust: at Rest, in Transit, and at Runtime](https://www.youtube.com/watch?v=x7j0D5VYUhw) - N. Polshakova (Solo.io) and J. Halley (Cisco) on extending zero-trust principles to the agent runtime, not just the network. Confidential Computing Summit 2026.
@@ -295,7 +295,7 @@ under the same published contribution criteria.
 
 ## Conferences & Communities
 
-*Key venues for agent governance research, practice, and community discussion.*
+*Where research, practice and discussion on agent governance happen.*
 
 - [AAMAS](https://www.aamas-conference.org/) - International Conference on Autonomous Agents and Multi-Agent Systems.
 - [ACM FAccT](https://facctconference.org/) - ACM Conference on Fairness, Accountability, and Transparency in sociotechnical systems.
@@ -309,7 +309,7 @@ under the same published contribution criteria.
 
 ## Contributing
 
-Contributions welcome! Please read the [contribution guidelines](CONTRIBUTING.md) and submit a PR. Open-source governance tools, research papers, and community resources are especially welcome.
+Contributions are welcome. Read the [contribution guidelines](CONTRIBUTING.md) and open a pull request. Open-source governance tools, research papers and community resources are especially welcome.
 
 Join the community on [Discord](https://discord.gg/grgzFEHgkj).
 
