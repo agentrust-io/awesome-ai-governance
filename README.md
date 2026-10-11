@@ -275,6 +275,7 @@ the same published contribution rules.
 - [OWASP Top 10 for LLM Applications](https://owasp.org/www-project-top-10-for-large-language-model-applications/) - Top 10 security risks for LLM applications including prompt injection, insecure output handling, and supply chain vulnerabilities.
 - [EU AI Regulation Decoded](https://euaird.vercel.app/) - Practitioner reference mapping EU AI Act obligations to the specific evidence an auditor expects (by role, risk tier, and deadline), with common audit red flags. Includes a free interactive audit-readiness checklist and a CC BY 4.0 machine-readable [obligation-to-evidence dataset](https://github.com/Kroniquedubaboo/eu-ai-act-obligation-evidence-dataset).
 - [Model Trust Gate](https://github.com/josephManzambi/model-trust-gate) - Adopter-side method for deciding whether to trust one AI model for one use, ending in a signed, expiring record with a JSON schema a policy engine can check.
+- [Agent Attribution Practice (AAP)](https://github.com/shimo4228/agent-attribution-practice) - MIT-licensed set of ten architecture decision records on how authorship, consequences and causal reconstruction of an autonomous agent's behavior are distributed (for example, capability absence, a named human approval gate for behavior-modifying writes, causal traceability), with four Business AI Quadrants for deciding whether a use case needs an autonomous agent at all.
 
 <a id="talks--videos"></a>
 
