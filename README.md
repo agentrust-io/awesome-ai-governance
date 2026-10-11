@@ -180,6 +180,7 @@ the same published contribution rules.
 - [Langfuse](https://github.com/langfuse/langfuse) - Open-source LLM engineering platform with tracing, prompt management, evaluations, and cost tracking.
 - [LangSmith](https://smith.langchain.com/) - LangChain's platform for debugging, testing, evaluating, and monitoring LLM applications.
 - [MLflow](https://github.com/mlflow/mlflow) - Open-source ML lifecycle platform with experiment tracking, model registry, and LLM evaluation tools.
+- [OpenClaw Monitor](https://github.com/flik2002/openclaw-monitor) - Self-hosted monitoring dashboard for OpenClaw AI agents: token usage, session tracking, and 7-day usage trends. MIT.
 - [OrcaPromptVault](https://github.com/Continuum-AI-Corp/OrcaPromptVault) - Versioned archive of agent prompts, developer instructions, and tool schemas. Distinguishes locally captured material with reproduction commands from model-reported material whose accuracy is unverified. AGPL-3.0.
 - [Prometheus](https://prometheus.io/) + [Grafana](https://grafana.com/) - Industry-standard metrics and visualization. Foundation for custom agent SLO dashboards.
 - [Provena](https://github.com/rajfirke/provena) - Open-source Python library for tamper-evident audit trails of AI agent context inputs: hash-chained logging, provenance validation, and freshness checking, with EU AI Act and OWASP ASI06 compliance reporting.
