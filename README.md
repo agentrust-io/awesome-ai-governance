@@ -175,6 +175,7 @@ AgenTrust is an independent open-source project. No company funds, owns or direc
 *Tools for tracing, monitoring, testing and debugging what AI agents do.*
 
 - [AgentOps](https://github.com/AgentOps-AI/agentops) - Agent observability SDK with session replay, LLM cost tracking, compliance monitoring, and failure detection.
+- [Aident Loadout](https://aident.ai) - Hosted MCP server and CLI that runs agent tool calls through a credential vault (agents get results, not raw API keys), shows the cost of each action before it runs, and keeps an audit log of what ran, where it came from, whether it succeeded and what it cost. Commercial with a free pay-as-you-go tier; MIT-licensed client skill.
 - [Arize / Phoenix](https://github.com/Arize-ai/phoenix) - Open-source AI observability with LLM tracing, evaluation, retrieval analysis, and experiment tracking.
 - [Braintrust](https://www.braintrust.dev/) - Evaluation and monitoring platform with logging, scoring, and experiment comparison.
 - [Datadog LLM Observability](https://www.datadoghq.com/product/llm-observability/) - Enterprise monitoring with trace clustering, cost attribution, and quality scoring.
