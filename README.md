@@ -312,6 +312,7 @@ AgenTrust is an independent open-source project. No company funds, owns or direc
 - [ICML](https://icml.cc/) - International Conference on Machine Learning, with safe and reliable ML tracks.
 - [NeurIPS](https://neurips.cc/) - Leading ML conference with AI safety, alignment, and trustworthy ML workshops.
 - [OWASP GenAI](https://genai.owasp.org/) - OWASP community for security guidance on generative AI and agentic applications.
+- [Public Good Intel Hub](https://github.com/yhbcode000/public-good-intel-hub) - Open Issue-based intel exchange for social problems from large-scale AI deployment; verified conclusions are promoted to a citable static index.
 - [r/agentic](https://www.reddit.com/r/agentic/) - Reddit community for autonomous AI agents, tools, and governance.
 
 ## Contributing
