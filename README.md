@@ -285,6 +285,7 @@ AgenTrust is an independent open-source project. No company funds, owns or direc
 - [EU AI Regulation Decoded](https://euaird.vercel.app/) - Practitioner reference mapping EU AI Act obligations to the specific evidence an auditor expects (by role, risk tier, and deadline), with common audit red flags. Includes a free interactive audit-readiness checklist and a CC BY 4.0 machine-readable [obligation-to-evidence dataset](https://github.com/Kroniquedubaboo/eu-ai-act-obligation-evidence-dataset).
 - [Model Trust Gate](https://github.com/josephManzambi/model-trust-gate) - Adopter-side method for deciding whether to trust one AI model for one use, ending in a signed, expiring record with a JSON schema a policy engine can check.
 - [Agent Attribution Practice (AAP)](https://github.com/shimo4228/agent-attribution-practice) - MIT-licensed set of ten architecture decision records on how authorship, consequences and causal reconstruction of an autonomous agent's behavior are distributed (for example, capability absence, a named human approval gate for behavior-modifying writes, causal traceability), with four Business AI Quadrants for deciding whether a use case needs an autonomous agent at all.
+- [AI System & Agent Inventory Register](https://github.com/digitalfortressaudit/ai-system-agent-inventory-register) - Free CC BY 4.0 CSV and Excel register for AI systems and agents, with NIST AI RMF, ISO/IEC 42001 and EU AI Act screening fields, including the MCP tools and delegated permissions each agent holds.
 
 <a id="talks--videos"></a>
 
