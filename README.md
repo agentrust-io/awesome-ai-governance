@@ -190,6 +190,7 @@ AgenTrust is an independent open-source project. No company funds, owns or direc
 - [OrcaPromptVault](https://github.com/Continuum-AI-Corp/OrcaPromptVault) - Versioned archive of agent prompts, developer instructions, and tool schemas. Distinguishes locally captured material with reproduction commands from model-reported material whose accuracy is unverified. AGPL-3.0.
 - [Prometheus](https://prometheus.io/) + [Grafana](https://grafana.com/) - Industry-standard metrics and visualization. Foundation for custom agent SLO dashboards.
 - [Provena](https://github.com/rajfirke/provena) - Open-source Python library for tamper-evident audit trails of AI agent context inputs: hash-chained logging, provenance validation, and freshness checking, with EU AI Act and OWASP ASI06 compliance reporting.
+- [Scalekit](https://www.scalekit.com/) - Agent integration platform that brokers per-user OAuth access to 600+ apps with scoped permissions, serves selected tools to each agent through virtual MCP servers, and records every agent tool call in an audit log that can stream to a SIEM. Commercial with a free tier.
 - [traceAI](https://github.com/future-agi/traceAI) - Open-source OpenTelemetry-native tracing for LLM and agent apps with 50+ framework integrations.
 - [Weights & Biases](https://wandb.ai/) - ML experiment tracking with LLM tracing, evaluation pipelines, and model monitoring.
 
