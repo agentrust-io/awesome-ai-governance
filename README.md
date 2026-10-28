@@ -284,6 +284,7 @@ AgenTrust is an independent open-source project. No company funds, owns or direc
 - [EU AI Regulation Decoded](https://euaird.vercel.app/) - Practitioner reference mapping EU AI Act obligations to the specific evidence an auditor expects (by role, risk tier, and deadline), with common audit red flags. Includes a free interactive audit-readiness checklist and a CC BY 4.0 machine-readable [obligation-to-evidence dataset](https://github.com/Kroniquedubaboo/eu-ai-act-obligation-evidence-dataset).
 - [Model Trust Gate](https://github.com/josephManzambi/model-trust-gate) - Adopter-side method for deciding whether to trust one AI model for one use, ending in a signed, expiring record with a JSON schema a policy engine can check.
 - [Agent Attribution Practice (AAP)](https://github.com/shimo4228/agent-attribution-practice) - MIT-licensed set of ten architecture decision records on how authorship, consequences and causal reconstruction of an autonomous agent's behavior are distributed (for example, capability absence, a named human approval gate for behavior-modifying writes, causal traceability), with four Business AI Quadrants for deciding whether a use case needs an autonomous agent at all.
+- [AI Crawler robots.txt Dataset](https://www.desearch.ai/blog/ai-crawlers-robots-txt-study) - Per-site dataset measuring how often 6,480 top-10,000 robots.txt files block AI training and AI search crawlers site-wide and name user-triggered fetchers (RFC 9309 parse, October 2026); method on the study page, data under CC BY 4.0.
 
 <a id="talks--videos"></a>
 
