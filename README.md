@@ -89,6 +89,7 @@ AgenTrust is an independent open-source project. No company funds, owns or direc
 *Languages and engines for writing access rules as code and checking them. Useful for limiting what an agent may do, which tools it may call and which data it may touch.*
 
 - [agent-evidence-admission](https://github.com/probityai/agent-evidence-admission) - Apache-2.0 Kubernetes admission policies for OPA, Kyverno, and Sigstore policy-controller that evaluate agent-execution evidence, with documented enforcement limits and conformance checks.
+- [Agent Role Contracts](https://github.com/suirindo/agent-role-contracts) - MIT-licensed CLI that checks declared agent roles, task scopes, and review separation offline before execution; does not enforce runtime permissions.
 - [Casbin](https://github.com/casbin/casbin) - Cross-language authorization library supporting ACL, RBAC, and ABAC models. Available in Go, Python, Java, and more.
 - [Cedar](https://github.com/cedar-policy/cedar) - Amazon's policy language for fine-grained, type-safe access control. Used as the policy engine in the Agent Governance Toolkit. Fast, formally verified, and human-readable.
 - [GOPAL](https://github.com/Principled-Evolution/gopal) - Apache-2.0 library of 85 Rego policies encoding AI-governance regulations (EU AI Act, NIST AI RMF, ICAO/FAA/EASA aviation, FERPA/COPPA, fair lending) as executable allow/deny checks for the OPA engine, versioned per framework with allow/deny tests in CI.
