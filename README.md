@@ -274,6 +274,8 @@ AgenTrust is an independent open-source project. No company funds, owns or direc
 
 - [Preventive vs. Reactive AI Agent Governance](https://penholder.ai/preventive-vs-reactive-ai-agent-governance.html) - Comparison of preventive control (gating an agent's write to a system of record behind human approval before it commits) versus reactive governance (detecting and remediating harmful actions after they have executed), and the trade-offs of each model.
 
+- [Agent Index](https://theagentindex.io) - Free, sourced directory and CC BY 4.0 open dataset (`agents.json` & `auditors.json`, DOI: `10.5281/zenodo.23604511`) of 407+ AI agents for compliance, security, and risk, plus 503+ verified audit firms (ISO 42001, SOC 2, ISO 27001, FedRAMP, CMMC, CERT-In).
+- [DPDP Act & CERT-In AI Agent Security Checklist](https://theagentindex.io/guides/dpdp-checklist/) - Free 2026 checklist mapping India's DPDP Rules 2025 and CERT-In Advisory CIAD-2026-0049 (scoped agent identities, 180-day/1-year audit logs, and breach reporting clocks) for teams running AI agents.
 - [Anthropic's Responsible Scaling Policy](https://www.anthropic.com/responsible-scaling-policy) - Framework for responsible AI deployment with AI Safety Levels (ASL) and safety evaluation commitments.
 - [Anthropic: Trustworthy Agents in Practice](https://www.anthropic.com/research/trustworthy-agents) - Anthropic's practical guidance on deploying trustworthy agents: balancing autonomy with human oversight, prompt-injection resistance, and operational safeguards.
 - [CSA AI Safety Initiative](https://cloudsecurityalliance.org/research/working-groups/artificial-intelligence) - Cloud Security Alliance publications on AI safety and security best practices.
