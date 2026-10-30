@@ -1,19 +1,11 @@
 # Sponsors
 
-Awesome AI Agent Governance is a community-curated open-source project. It is
-sponsored by OPAQUE Systems, which funds the engineering and infrastructure
-work behind it.
+AgenTrust is an independent open-source project. No company funds, owns or directs it; contributions are voluntary.
 
-## Current sponsors
-
-### OPAQUE Systems
-
-Founding engineering and infrastructure sponsor, and contributor to the
-AgenTrust ecosystem.
+OPAQUE Systems sponsored early development until October 2026.
 
 ## Editorial independence
 
-Sponsor recognition is separate from inclusion, ordering, descriptions, and
-maintainership. A sponsor's products receive no automatic listing, preferred
-placement, or exception from [CONTRIBUTING.md](CONTRIBUTING.md). Competing
-products are evaluated under the same published criteria.
+Past sponsorship had no effect on which entries are included, their order,
+their descriptions, or who maintains the list. Every product is judged by the
+same published rules in [CONTRIBUTING.md](CONTRIBUTING.md).
