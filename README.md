@@ -284,6 +284,7 @@ AgenTrust is an independent open-source project. No company funds, owns or direc
 - [OWASP Top 10 for LLM Applications](https://owasp.org/www-project-top-10-for-large-language-model-applications/) - Top 10 security risks for LLM applications including prompt injection, insecure output handling, and supply chain vulnerabilities.
 - [Model Trust Gate](https://github.com/josephManzambi/model-trust-gate) - Adopter-side method for deciding whether to trust one AI model for one use, ending in a signed, expiring record with a JSON schema a policy engine can check.
 - [Agent Attribution Practice (AAP)](https://github.com/shimo4228/agent-attribution-practice) - MIT-licensed set of ten architecture decision records on how authorship, consequences and causal reconstruction of an autonomous agent's behavior are distributed (for example, capability absence, a named human approval gate for behavior-modifying writes, causal traceability), with four Business AI Quadrants for deciding whether a use case needs an autonomous agent at all.
+- [Agent Governance Templates](https://github.com/koalstingkdelaney-gif/agent-governance-templates) - Free MIT-licensed templates for governing AI agents: an agent bounds checklist, an approval-gate policy template, and an audit-log template.
 
 <a id="talks--videos"></a>
 
