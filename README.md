@@ -119,6 +119,7 @@ AgenTrust is an independent open-source project. No company funds, owns or direc
 
 *Toolkits for building agents that include places to plug in safety checks, human approval or policy rules.*
 
+- [AEGIS by 100monkeys.ai](https://github.com/100monkeys-ai/aegis-orchestrator) - Self-hosted, AGPL-3.0 agent orchestrator, in beta, that enforces manifest-declared network and filesystem policy in the orchestrator, runs agents in isolated runtimes, and verifies tool calls end to end with the SEAL protocol.
 - [AgentScope](https://github.com/modelscope/agentscope) - Multi-agent platform with fault tolerance, agent-level monitoring, and configurable message validation.
 - [AutoGen](https://github.com/microsoft/autogen) - Multi-agent conversation framework with human oversight, code execution sandboxing, and conversation policies.
 - [CorvinOS](https://github.com/CorvinLabs/CorvinOS) - Self-hosted agentic OS connecting local and cloud models to Discord, Telegram, WhatsApp, Slack, and Email, with a fail-closed GDPR consent gate, hash-chained audit log, and bot-disclosure controls. Python, Apache-2.0.
