@@ -112,6 +112,7 @@ AgenTrust is an independent open-source project. No company funds, owns or direc
 - [Rebuff](https://github.com/protectai/rebuff) - Prompt injection detection using multi-layer defense: heuristics, LLM analysis, and canary tokens.
 - [shim-cli](https://github.com/GetSHIM/shim-cli) - Local hooks for Claude Code, Codex, Copilot CLI and VS Code that detect secrets and personal data in agent traffic, mask them in Claude Code tool results before the model reads them, and keep a count-only session record.
 - [Sunglasses](https://github.com/sunglasses-dev/sunglasses) - Open-source local scanner that checks text and files for prompt injection, credential leaks and data exfiltration. Runs as a CLI, a Python API or an MCP server.
+- [ValGuard](https://valguard.ai) - Hosted runtime validation and policy enforcement for LLM calls and agent steps, with deterministic rules and shadow mode; free tier available. Growth+ plans provide downloadable HMAC-signed evidence for individual requests.
 - [Vigil](https://github.com/deadbits/vigil-llm) - LLM security scanner for detecting prompt injections using embedding similarity, heuristics, and canary tokens.
 
 ## Agent Frameworks with Governance Features
