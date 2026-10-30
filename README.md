@@ -326,3 +326,5 @@ Join the community on [Discord](https://discord.gg/grgzFEHgkj).
 ---
 
 *Maintained by [Imran Siddique](https://github.com/imran-siddique), Project Lead, creator of the [Agent Governance Toolkit](https://github.com/microsoft/agent-governance-toolkit), and contributor to OWASP ASI, CoSAI WS4, and the Agentic AI Foundation. The curator also maintains the [agentrust-io](https://github.com/agentrust-io) repositories: Weight Custody Manifest, Agent Manifest, cMCP, cA2A, TRACE and its conformance suite and registry, and AgenTrust Telemetry.*
+
+- [{^} Protocol One — AI Index Page v3 & HITL Governance Toolkits](https://protocolone.store/pages/ai-index) - Operational EU AI Act Article 14 human-in-the-loop governance toolkits, offline audit receipts, and free checklists.
