@@ -225,8 +225,8 @@ AgenTrust is an independent open-source project. No company funds, owns or direc
 ## Standards & Specifications
 
 *Protocols, specifications and regulations that matter for governing agents and for making agents from different vendors work together.*
+- [AI Permit Specification](https://github.com/keelapi/keel-permit) - Apache-2.0 wire format, JSON schemas and verification rules for a pre-execution decision record: what an AI agent action was authorized to do, bound to the request that was dispatched. Reference verifier: keel-verifier. A Permit does not establish that the action ran or what it did.
 - [AIREP (AI Runtime Evidence Protocol)](https://github.com/halvrenofviryel/ai-runtime-evidence-protocol) - Experimental, vendor-neutral runtime-evidence format for AI decisions, control delivery, execution, and observed effects, with signed/hash-linked artifacts and explicit missing or unevaluated states. Open specification; not a ratified standard.
-
 - [AI Agent Trace Schema](https://github.com/Isaacruwa/ai-agent-trace-schema) - Open JSON Schema normalizing AI-agent runtime events (tool calls, human interventions, errors, deployment changes) into a common format for compliance evidence, with converters for OpenTelemetry and LangSmith exports.
 - [agent-evidence-vocabulary](https://github.com/probityai/agent-evidence-vocabulary) - Versioned CC0 vocabulary for adversarial-execution evidence claims, with crosswalk templates, governance rules, and validation tooling. Repository code and documentation are Apache-2.0.
 - [Agent-to-Agent Protocol (A2A)](https://github.com/google/A2A) - Google-led open protocol for inter-agent communication, task delegation, and capability discovery.
