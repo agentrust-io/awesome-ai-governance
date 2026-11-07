@@ -287,6 +287,7 @@ AgenTrust is an independent open-source project. No company funds, owns or direc
 - [Model Trust Gate](https://github.com/josephManzambi/model-trust-gate) - Adopter-side method for deciding whether to trust one AI model for one use, ending in a signed, expiring record with a JSON schema a policy engine can check.
 - [Agent Attribution Practice (AAP)](https://github.com/shimo4228/agent-attribution-practice) - MIT-licensed set of ten architecture decision records on how authorship, consequences and causal reconstruction of an autonomous agent's behavior are distributed (for example, capability absence, a named human approval gate for behavior-modifying writes, causal traceability), with four Business AI Quadrants for deciding whether a use case needs an autonomous agent at all.
 - [Agentic AI Test Checklist 110](https://huggingface.co/datasets/srinivaspadmanabhuni/agentic-ai-test-checklist-110) - CC BY 4.0 checklist of 110 test cases for AI agents with manual procedures, evidence to capture, and crosswalks to OWASP Agentic 2026, NIST AI RMF, EU AI Act and ISO/IEC 42001 themes.
+- [LLM Gateway Security Questionnaire](https://github.com/henrikdukefoss/llm-gateway-security-questionnaire) - MIT-licensed, vendor-neutral questionnaire (44 questions) for reviewing the LLM gateways and AI API providers that agents call through: data residency, retention, sub-processors, audit logs, spend controls and EU AI Act deployer record-keeping, with a CSV for vendor answers.
 
 <a id="talks--videos"></a>
 
