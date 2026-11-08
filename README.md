@@ -151,6 +151,7 @@ AgenTrust is an independent open-source project. No company funds, owns or direc
 - [scitt-cose](https://github.com/action-state-group/scitt-cose) - Payload-agnostic IETF SCITT + COSE verification substrate (Python): verifies Signed Statements and RFC 9162 SHA-256 Receipts with inclusion/consistency proofs, offline. Open source to run yourself, or hit the free community verify service at verify.agentactioncapsule.org to check a receipt without trusting the issuer. Apache-2.0.
 - [SPIFFE/SVID](https://spiffe.io/) - Secure Production Identity Framework for Everyone. Cryptographic workload identity applicable to agent-to-agent authentication.
 - [W3C Decentralized Identifiers (DIDs)](https://www.w3.org/TR/did-core/) - W3C standard for decentralized, self-sovereign identifiers applicable to durable agent identity without centralized registries.
+- [Know Your Agent](https://github.com/RishabhPande/know-your-agent) - MIT educational Python toolkit for signed agent credentials, narrowed delegation, scoped authorization and revocation.
 
 ## Agent Action Records
 
