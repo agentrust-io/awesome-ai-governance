@@ -1,5 +1,7 @@
 # Contributing to Awesome AI Agent Governance
 
+AgenTrust is an independent open-source project. No company funds, owns or directs it; contributions are voluntary.
+
 Thank you for helping improve the list. This page explains what can be listed, how to add an entry, and what we check before accepting it.
 
 ## Guidelines
