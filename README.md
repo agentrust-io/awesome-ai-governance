@@ -306,14 +306,9 @@ AgenTrust is an independent open-source project. No company funds, owns or direc
 *Recorded talks and sessions on governing agents, enforcing rules while agents run, and running agents on hardware that can prove what it ran. Speaker and venue are listed so you can see who said what.*
 
 - [Agentic AI Is Running Your Infrastructure](https://www.youtube.com/watch?v=1Z_7hvy_-YE) - Mike Bursell, Confidential Computing Consortium. Keynote on what changes when agents operate infrastructure rather than assist people, and where confidential computing sits in that trust model. Confidential Computing Summit 2026.
-- [Agentic Zero Trust: at Rest, in Transit, and at Runtime](https://www.youtube.com/watch?v=x7j0D5VYUhw) - N. Polshakova (Solo.io) and J. Halley (Cisco) on extending zero-trust principles to the agent runtime, not just the network. Confidential Computing Summit 2026.
 - [Building Governed AI Agents with the Agent Governance Toolkit](https://www.youtube.com/watch?v=uDQBqp9Om5s) - Imran Siddique (Project Lead) walking through AGT's policy enforcement and audit model for enterprise deployments. GenAI Gurus, May 2026.
-- [From Trust to Proof: The Next Generation of AI Agent Governance](https://www.youtube.com/watch?v=uz4absejhHc) - Imran Siddique (Project Lead) and Jason Lazarski on the gap between controlling an agent and proving you controlled it, and how Agent Manifest, cMCP, and TRACE close it. July 2026.
 - [Governing AI Agents at Runtime: Open Source Zero-Trust with AGT](https://www.youtube.com/watch?v=YtjjoPTN0U8) - Imran Siddique on runtime governance for agents moving from demo to production. Ubuntu Summit 26.04, Canonical.
-- [Governing AI Agents at the Hardware Boundary](https://www.youtube.com/watch?v=z8hOZ77iiJo) - Imran Siddique (Project Lead) on why software-only enforcement has a structural ceiling and what moving the control point into a TEE buys. Confidential Computing Summit 2026.
-- [NVIDIA Confidential Computing Attestation for Next-Generation AI](https://www.youtube.com/watch?v=vzQVZA7veO0) - R. Nertney and S. Gilson (NVIDIA) on GPU attestation and the evidence it produces for AI workloads. Confidential Computing Summit 2026.
 - [Open Source Friday: Governance for AI Agents](https://www.youtube.com/watch?v=bIioEmT2KEM) - Imran Siddique with GitHub on why prompts are not a control surface, plus the practical side of running a fast-growing governance project in the open. June 2026.
-- [Reliability in AI (Agentic) Systems](https://www.youtube.com/watch?v=jvHZAQdx-LU) - Panel on failure modes, evaluation, and what reliability means for systems that act. Confidential Computing Summit 2026.
 
 <a id="conferences--communities"></a>
 
