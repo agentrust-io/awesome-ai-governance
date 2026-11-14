@@ -111,6 +111,7 @@ AgenTrust is an independent open-source project. No company funds, owns or direc
 
 - [ai-evaluation](https://github.com/future-agi/ai-evaluation) - Open-source LLM evaluation framework with 50+ metrics, LLM-as-Judge, and guardrail scanners (jailbreak, PII, injection).
 - [Arthur Shield](https://www.arthur.ai/product/shield) - Firewall for LLMs that detects hallucinations, toxicity, PII leakage, and prompt injection in real time.
+- [claude-bulkhead](https://github.com/dooly6276/claude-bulkhead) - Pre-tool hooks for Claude Code, Codex, Gemini CLI, Copilot CLI, Cursor and other coding agents that block shell commands which cannot be undone, such as `rm -rf $D/` with an empty variable, and tell the agent the safe form. Checks command text only, not deletes inside scripts.
 - [Guardrails AI](https://github.com/guardrails-ai/guardrails) - Framework for structural, type, and quality guarantees on LLM outputs. Guardrails Hub provides community validators.
 - [Hyperion](https://github.com/Salesforce/hyperion) - Framework for evaluating and improving robustness of LLM-based agents against adversarial attacks.
 - [Lakera Guard](https://www.lakera.ai/) - Real-time API for detecting prompt injections, data leakage, toxic content, and other LLM security threats.
