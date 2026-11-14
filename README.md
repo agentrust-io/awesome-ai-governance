@@ -226,6 +226,7 @@ AgenTrust is an independent open-source project. No company funds, owns or direc
 - [PyRIT](https://github.com/Azure/PyRIT) - Microsoft's Python Risk Identification Toolkit for red-teaming generative AI systems with automated attack strategies.
 - [sentinel-scan-cli](https://github.com/Ventrova/sentinel-scan-cli) - Free, open-source CLI (and MCP server) that scans MCP manifests and LLM apps for tool poisoning, prompt injection, and rug-pulls, with OWASP LLM Top 10-mapped findings.
 - [Snyk Agent Scan](https://github.com/snyk/agent-scan) - Security scanner for AI agents and MCP servers. Detects vulnerabilities in tool configurations, permissions, and data flows.
+- [WebMCP Explorer by Corsen AI](https://github.com/CorsenAI/webmcp-explorer) - Apache-2.0 Chrome extension that reviews the WebMCP tools a website exposes to AI agents for prompt-injection indicators and risky schemas, with evidence, proposed fixes and SARIF export, and requires per-call approval when local MCP clients invoke them.
 
 <a id="fairness--bias-auditing"></a>
 
