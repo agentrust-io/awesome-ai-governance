@@ -280,6 +280,8 @@ AgenTrust is an independent open-source project. No company funds, owns or direc
 
 - [AI Agent Incident Register](https://companyscope.io/register) - A numbered public corpus of AI agent incidents, each analysed for the legal duty engaged, who bears liability across the chain (deployer / shared / vendor), and the governance that would have prevented it. Includes a Liability Crosswalk mapping OWASP's agentic Top 10, the NIST AI RMF, Singapore's IMDA framework, and the EU AI Act to each other and to who carries liability. Free to read and cite; CC BY 4.0 machine-readable feed.
 
+- [AI Agent Incident Tracker](https://permissionprotocol.com/agent-incident-tracker/methodology) - Public, source-linked collection of AI-agent incidents and controlled demonstrations, with evidence-quality labels, overlap notes, JSON/CSV exports, and dated snapshots for reproducible citation. Published by Permission Protocol; counts describe collected records, not population failure rates.
+
 - [Singapore AI Governance Readiness Checklist](https://vyrwork.com/tools/singapore-ai-governance-readiness-checklist) - Free evidence-oriented planning checklist translating IMDA's 2026 agentic AI governance dimensions into 24 prompts for risk bounds, accountable ownership, lifecycle technical controls, and end-user responsibility. It is a planning aid, not a certification or compliance score.
 
 - [Preventive vs. Reactive AI Agent Governance](https://penholder.ai/preventive-vs-reactive-ai-agent-governance.html) - Comparison of preventive control (gating an agent's write to a system of record behind human approval before it commits) versus reactive governance (detecting and remediating harmful actions after they have executed), and the trade-offs of each model.
@@ -304,14 +306,9 @@ AgenTrust is an independent open-source project. No company funds, owns or direc
 *Recorded talks and sessions on governing agents, enforcing rules while agents run, and running agents on hardware that can prove what it ran. Speaker and venue are listed so you can see who said what.*
 
 - [Agentic AI Is Running Your Infrastructure](https://www.youtube.com/watch?v=1Z_7hvy_-YE) - Mike Bursell, Confidential Computing Consortium. Keynote on what changes when agents operate infrastructure rather than assist people, and where confidential computing sits in that trust model. Confidential Computing Summit 2026.
-- [Agentic Zero Trust: at Rest, in Transit, and at Runtime](https://www.youtube.com/watch?v=x7j0D5VYUhw) - N. Polshakova (Solo.io) and J. Halley (Cisco) on extending zero-trust principles to the agent runtime, not just the network. Confidential Computing Summit 2026.
 - [Building Governed AI Agents with the Agent Governance Toolkit](https://www.youtube.com/watch?v=uDQBqp9Om5s) - Imran Siddique (Project Lead) walking through AGT's policy enforcement and audit model for enterprise deployments. GenAI Gurus, May 2026.
-- [From Trust to Proof: The Next Generation of AI Agent Governance](https://www.youtube.com/watch?v=uz4absejhHc) - Imran Siddique (Project Lead) and Jason Lazarski on the gap between controlling an agent and proving you controlled it, and how Agent Manifest, cMCP, and TRACE close it. July 2026.
 - [Governing AI Agents at Runtime: Open Source Zero-Trust with AGT](https://www.youtube.com/watch?v=YtjjoPTN0U8) - Imran Siddique on runtime governance for agents moving from demo to production. Ubuntu Summit 26.04, Canonical.
-- [Governing AI Agents at the Hardware Boundary](https://www.youtube.com/watch?v=z8hOZ77iiJo) - Imran Siddique (Project Lead) on why software-only enforcement has a structural ceiling and what moving the control point into a TEE buys. Confidential Computing Summit 2026.
-- [NVIDIA Confidential Computing Attestation for Next-Generation AI](https://www.youtube.com/watch?v=vzQVZA7veO0) - R. Nertney and S. Gilson (NVIDIA) on GPU attestation and the evidence it produces for AI workloads. Confidential Computing Summit 2026.
 - [Open Source Friday: Governance for AI Agents](https://www.youtube.com/watch?v=bIioEmT2KEM) - Imran Siddique with GitHub on why prompts are not a control surface, plus the practical side of running a fast-growing governance project in the open. June 2026.
-- [Reliability in AI (Agentic) Systems](https://www.youtube.com/watch?v=jvHZAQdx-LU) - Panel on failure modes, evaluation, and what reliability means for systems that act. Confidential Computing Summit 2026.
 
 <a id="conferences--communities"></a>
 
