@@ -103,6 +103,7 @@ AgenTrust is an independent open-source project. No company funds, owns or direc
 - [Cedar](https://github.com/cedar-policy/cedar) - Amazon's policy language for fine-grained, type-safe access control. Used as the policy engine in the Agent Governance Toolkit. Fast, formally verified, and human-readable.
 - [Chock](https://github.com/open-coder-ai/chock) - Apache-2.0 policy-as-code for AI coding agents: policies in the repository compile to agent hooks, git hooks and a CI check, with a per-agent label saying whether each policy blocks, asks or is advisory.
 - [GOPAL](https://github.com/Principled-Evolution/gopal) - Apache-2.0 library of 85 Rego policies encoding AI-governance regulations (EU AI Act, NIST AI RMF, ICAO/FAA/EASA aviation, FERPA/COPPA, fair lending) as executable allow/deny checks for the OPA engine, versioned per framework with allow/deny tests in CI.
+- [Lugh](https://github.com/Ashutosh3142857/lugh-lang) - Programming language for AI agents in which policy, budgets and human approval are syntax; every action is typed and checked before it runs.
 - [Open Policy Agent (OPA)](https://github.com/open-policy-agent/opa) - CNCF general-purpose policy engine. Decouples policy decisions from application logic using the Rego language. Widely deployed for Kubernetes and API authorization.
 - [SpiceDB](https://github.com/authzed/spicedb) - Google Zanzibar-inspired database for fine-grained, relationship-based authorization. Useful for cross-agent and multi-tenant permission modeling.
 
