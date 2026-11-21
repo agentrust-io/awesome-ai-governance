@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "entries": [
+    {
+      "name": "Synthetic example (not a real listing)",
+      "url": "https://example.org/tool",
+      "category": "Synthetic category",
+      "description": "Fictional record for demonstrating metadata validation.",
+      "availability": "published-specification",
+      "availability_evidence": "https://example.org/tool/specification",
+      "commercial_disclosure": "Synthetic disclosure; no actual product evaluated.",
+      "last_verified": "2026-10-21",
+      "reviewer": "synthetic-reviewer",
+      "verification_evidence": "https://example.org/reviews/synthetic"
+    }
+  ]
+}
