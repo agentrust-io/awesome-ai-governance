@@ -9,4 +9,9 @@ exclude = [
     # Slow hosts that regularly exceed CI timeouts
     '^https://aisafety\.camp/$',
     '^https://www\.aamas-conference\.org/',
+    # microsoft/agent-framework: Microsoft made this repo private on 2026-11-18
+    # while investigating malicious PyPI releases (agent-framework 1.26.1/1.26.2,
+    # GHSA-764m-3ppc-5m73). Repo returns 404 as of 2026-11-20. Remove this
+    # exclusion once the repo is public again.
+    '^https://github\.com/microsoft/agent-framework$',
 ]
