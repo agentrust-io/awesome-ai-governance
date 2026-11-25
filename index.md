@@ -211,6 +211,7 @@ AgenTrust is an independent open-source project. No company funds, owns or direc
 
 *Scanners, red-teaming tools (which run simulated attacks) and frameworks for testing how AI agents and LLMs hold up against attackers.*
 
+- [agentest](https://github.com/srpadmanabhuni/agentest) - Offline, deterministic tests of what an AI agent actually did, reading OpenTelemetry GenAI traces, A2A AgentCards and MCP tool lists.
 - [Commit](https://getcommit.dev) - Supply chain trust scoring for npm, PyPI, Cargo, and Go packages. Scores maintainer concentration, OIDC publisher gaps, and release consistency to surface high-risk dependency patterns that vulnerability databases miss. CLI, GitHub Action, IDE hooks, REST API, and MCP server.
 - [Counterfit](https://github.com/Azure/counterfit) - Azure's tool for assessing ML model security through adversarial attacks.
 - [CyberSecEval](https://github.com/meta-llama/PurpleLlama/tree/main/CybersecurityBenchmarks) - Meta's benchmark suite for LLM cybersecurity risks including insecure code generation and prompt extraction.
