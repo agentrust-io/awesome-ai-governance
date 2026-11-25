@@ -317,6 +317,7 @@ AgenTrust is an independent open-source project. No company funds, owns or direc
 - [AI System & Agent Inventory Register](https://github.com/digitalfortressaudit/ai-system-agent-inventory-register) - Free CC BY 4.0 CSV and Excel register for AI systems and agents, with NIST AI RMF, ISO/IEC 42001 and EU AI Act screening fields, including the MCP tools and delegated permissions each agent holds.
 - [AI Acceptable-Use Policy Template](https://github.com/nosistech/governance-templates) - AI acceptable-use policy template for small and mid-size companies, covering approved tools, data rules, human review and incident reporting. Comes with staff guides in 4 versions.
 - [AI Agent Security Disclosure Index](https://aiagentsearch.ai/ai-agent-security-disclosure-index.html) - Monthly index, updated each month, of what AI agent startups currently state publicly about security and control: SOC 2 reports, a documented human approval step before the agent acts, audit logs, training and retention statements. It tracks public disclosures only and does not independently verify compliance. Method, codebook and totals-only CSV under CC BY 4.0. Published by Agentic Solutions LLC.
+- [Can AI fill out forms for you? How computer use agents work](https://opitor.com/guides/can-ai-fill-out-forms-for-you) - Practical guide to keeping a computer-use agent in check on web forms: isolated sessions, passwords kept out of chat, approval of the exact submit or payment step, no automatic retry of an unclear payment, and stopping at bot checks.
 
 ## Talks & Videos
 
