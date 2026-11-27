@@ -149,6 +149,7 @@ AgenTrust is an independent open-source project. No company funds, owns or direc
 - [OpenAI Agents SDK](https://github.com/openai/openai-agents-python) - Official OpenAI SDK with built-in guardrails, input/output validation, and handoff controls.
 - [PydanticAI](https://github.com/pydantic/pydantic-ai) - Agent framework with type-safe tool definitions, structured outputs, and dependency injection.
 - [Semantic Kernel](https://github.com/microsoft/semantic-kernel) - Microsoft's AI orchestration SDK with plugin permission models, function filtering, and responsible AI hooks.
+- [Sipar](https://github.com/osimmoapies/sipar) - Agent language whose runtime labels model, web, file and tool output and blocks it from shell, file and network actions until the program has checked it; every `trust` and `approve` is written to a replayable journal.
 - [smolagents](https://github.com/huggingface/smolagents) - Hugging Face's lightweight agent library with sandboxed code execution and security controls.
 - [Trina AX](https://github.com/trina-app/trina-ax) - Self-hosted, AGPL-3.0 team AI server that runs Claude Code and Codex as its engine, checks every file request against the asking person's folder permissions, sets token limits per person, group or team, and runs the engine in a bubblewrap, Landlock and seccomp sandbox on Linux.
 
